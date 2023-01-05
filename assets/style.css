@@ -7,8 +7,8 @@
     flex-direction: row;
 }
 
-.quote {
-    display: flex;
+.quotecard {
+    display: block;
     text-align: center;
     padding: 5px;
     margin: 3px;
@@ -36,6 +36,8 @@
       border: 1px solid #888;
       width: 50%; /* Could be more or less, depending on screen size */
       height: 50%;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
     }
     
     /* The Close Button */
@@ -52,3 +54,17 @@
     text-decoration: none;
     cursor: pointer;
     }
+
+.hidden {
+  display: none;
+}
+
+.button {
+  display: block;
+  width: 100px;
+  height: 25px;
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
