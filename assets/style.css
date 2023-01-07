@@ -1,21 +1,31 @@
-* {
-    background-color: rgba(171, 171, 171, 0.548);
+.background {
+    background-image: linear-gradient(to bottom right, rgba(156, 156, 156, 0.548), rgb(65, 65, 65));
 }
 
 .mainquotedisplay {
-    display: flex;
-    flex-direction: row;
+  margin:  15px; 
+  display: inline-block;
+  flex-direction: row;
 }
 
 .quotecard {
     display: inline-block;
     text-align: center;
+    max-width: 150px;
     padding: 5px;
     margin: 3px;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 3px;
-    box-shadow: 5px 3px 5px grey;
+    background-color: rgb(206, 206, 206);
+    border: hidden;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px rgb(34, 34, 34);
+    font-family: 'Times New Roman', Times, serif;
 }
+
+.quotecard:hover {
+  background-color: rgb(144, 76, 76);
+  cursor: pointer;
+}
+
 
 .modal {
     display: none; /* Hidden by default */
@@ -64,8 +74,13 @@
   display: block;
   width: 100px;
   height: 25px;
-  background-color: blue;
+  background-color: rgb(64, 64, 155);
   color: white;
   font-size: 16px;
   text-align: center;
+}
+
+.button:hover {
+  color: rgb(144, 76, 76);
+  background-color: rgb(106, 106, 143);
 }

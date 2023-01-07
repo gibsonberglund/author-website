@@ -370,26 +370,35 @@ for a much lower rent than I was currently paying, so long as I could, “surviv
 `
 
 //QUOTECARD 1
-
+//set variables
 let quote1 = document.querySelector('#quote1');
 let modal1 = document.querySelector('#modal1');
 let modalContent1 = document.querySelector('#modalcontent1');
 let quote1Button = document.querySelector('#quote1button');
+let quote1Card = document.querySelector('#quote1card');
 
+//listens for click on one of the quote cards
 quote1.addEventListener('click', function() {
+//changes size and content when clicked
     quote1.textContent = midQuote1;
     quote1Button.setAttribute('class', 'button');
+    quote1Card.setAttribute('style', 'max-width: 450px');
 });
 
+//listens for click on 'keep reading' button
 quote1Button.addEventListener('click', function() {
+  //hides button
     quote1Button.setAttribute('class', 'hidden');
+  //displays modal with quote content
     modal1.style.display = "flex";
     modalContent1.textContent = longQuote1;
+  //reverts quote card to original state
     quote1.textContent = "She pulls me through the door and throws her arms around me";
+    quote1Card.setAttribute('style', 'max-width: 150px');
 });
 
+//button to close modal
 var span = document.getElementsByClassName("close1")[0]
-
 span.onclick = function() {
     modal1.style.display = "none";
   }
@@ -399,11 +408,13 @@ let quote2 = document.querySelector('#quote2');
 let modal2 = document.querySelector('#modal2');
 let modalContent2 = document.querySelector('#modalcontent2');
 let quote2Button = document.querySelector('#quote2button');
+let quote2Card = document.querySelector('#quote2card');
 
   quote2.addEventListener('click', function() {
     console.log("are you there");
     quote2.textContent = midQuote2
     quote2Button.setAttribute('class', 'button');
+    quote2Card.setAttribute('style', 'max-width: 450px');
 });
 
 quote2Button.addEventListener('click', function() {
@@ -411,6 +422,7 @@ quote2Button.addEventListener('click', function() {
     modal2.style.display = "flex";
     modalContent2.textContent = longQuote2;
     quote2.textContent = "the Earth a broken mirror reflecting a broken sky";
+    quote2Card.setAttribute('style', 'max-width: 150px');
 });
 
 var span = document.getElementsByClassName("close2")[0]
@@ -424,10 +436,12 @@ let quote3 = document.querySelector('#quote3');
 let modal3 = document.querySelector('#modal3');
 let modalContent3 = document.querySelector('#modalcontent3');
 let quote3Button = document.querySelector('#quote3button');
+let quote3Card = document.querySelector('#quote3card');
 
   quote3.addEventListener('click', function() {
     quote3.textContent = midQuote3
     quote3Button.setAttribute('class', 'button');
+    quote3Card.setAttribute('style', 'max-width: 450px');
 });
 
 quote3Button.addEventListener('click', function() {
@@ -435,6 +449,7 @@ quote3Button.addEventListener('click', function() {
     modal3.style.display = "flex";
     modalContent3.textContent = longQuote3;
     quote3.textContent = "I woke not from sleep but only a heavy doze";
+    quote3Card.setAttribute('style', 'max-width: 150px');
 });
 
 var span = document.getElementsByClassName("close3")[0]
@@ -448,10 +463,12 @@ let quote4 = document.querySelector('#quote4');
 let modal4 = document.querySelector('#modal4');
 let modalContent4 = document.querySelector('#modalcontent4');
 let quote4Button = document.querySelector('#quote4button');
+let quote4Card = document.querySelector('#quote4card');
 
   quote4.addEventListener('click', function() {
     quote4.textContent = midQuote4
     quote4Button.setAttribute('class', 'button');
+    quote4Card.setAttribute('style', 'max-width: 450px');
 });
 
 quote4Button.addEventListener('click', function() {
@@ -459,6 +476,7 @@ quote4Button.addEventListener('click', function() {
     modal4.style.display = "flex";
     modalContent4.textContent = longQuote4;
     quote4.textContent = "This protest culture I’d come to write about had evolved into a whole new animal";
+    quote4Card.setAttribute('style', 'max-width: 150px');
 });
 
 var span = document.getElementsByClassName("close4")[0]
