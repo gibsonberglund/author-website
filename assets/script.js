@@ -315,7 +315,7 @@ There was some meat for my story, now I just needed a place to write it down.
 `
 
 //Quote 4
-let midQuote4 = `his protest culture I’d come to write about had evolved into a whole new animal, and I’d been right there
+let midQuote4 = `This protest culture I’d come to write about had evolved into a whole new animal, and I’d been right there
 in the middle when it happened. The story was bigger and more important now than I’d ever expected, and I could scoop every
 journalist outside Chile if I acted fast enough.`
 
@@ -369,6 +369,83 @@ friends with Jorge. I texted him about the empty room, and heard back the same d
 for a much lower rent than I was currently paying, so long as I could, “survive in this house of terror.”
 `
 
+//Quote 5
+let shortQuote5 = `If you trip,
+Selah,
+Let the sails
+Carry the ship`
+
+let midQuote5 = `If you trip
+Selah,
+Let the sails
+Carry the ship.
+
+Seasick sailors
+Gripping the ropes,
+Remember,
+Always fight horror
+With hope.
+Don’t fear a glimpse
+Into the abyss,
+And don’t fear those eyes
+In deepest darkness.
+Breathe with your gut,
+Roll with the motion,
+Those eyes are your own
+And you are the ocean.
+`
+let longQuote5 = `If you trip
+Selah,
+Let the sails
+Carry the ship.
+
+Seasick sailors
+Gripping the ropes,
+Remember,
+Always fight horror
+With hope.
+Don’t fear a glimpse
+Into the abyss,
+And don’t fear those eyes
+In deepest darkness.
+Breathe with your gut,
+Roll with the motion,
+Those eyes are your own
+And you are the ocean.
+
+Selah
+
+Hidden oasis,
+Where Isis awaits,
+Purring, pearlescent,
+The Sphinx awakes.
+
+Ivy-curled colonnades unfold,
+A bird-headed golden god enthroned.
+A river of wine flows forth from her tomb,
+From the doorway to heaven,
+From her open womb.
+
+Selah
+
+Blinding patterned silence in a great white web,
+The open mind is petrified by an infantile regression.
+A voice like death fills in the chest, eyes open wide.
+The self dissolves, unraveling perception,
+As one life to the next we fall.
+As the brain to the mind,
+And the body to the soul,
+The lock is large
+But the key is small.
+
+So trip unto writ,
+As writ to a trip.
+The penny dropped
+And fell to bits.
+`
+
+
+
 //QUOTECARD 1
 //set variables
 let quote1 = document.querySelector('#quote1');
@@ -380,7 +457,9 @@ let quote1Card = document.querySelector('#quote1card');
 //listens for click on one of the quote cards
 quote1.addEventListener('click', function() {
 //changes size and content when clicked
+    console.log("why");
     quote1.textContent = midQuote1;
+    console.log("not");
     quote1Button.setAttribute('class', 'button');
     quote1Card.setAttribute('style', 'max-width: 450px');
 });
@@ -398,7 +477,8 @@ quote1Button.addEventListener('click', function() {
 });
 
 //button to close modal
-var span = document.getElementsByClassName("close1")[0]
+var span = document.getElementById("close1");
+
 span.onclick = function() {
     modal1.style.display = "none";
   }
@@ -483,4 +563,33 @@ var span = document.getElementsByClassName("close4")[0]
 
 span.onclick = function() {
     modal4.style.display = "none";
+  }
+
+//QUOTECARD 5
+let quote5 = document.querySelector('#quote5');
+let modal5 = document.querySelector('#modal5');
+let modalContent5 = document.querySelector('#modalcontent5');
+let quote5Button = document.querySelector('#quote5button');
+let quote5Card = document.querySelector('#quote5card');
+
+quote5.textContent = shortQuote5;
+
+  quote5.addEventListener('click', function() {
+    quote5.textContent = midQuote5;
+    quote5Button.setAttribute('class', 'button');
+    quote5Card.setAttribute('style', 'max-width: 450px');
+});
+
+quote5Button.addEventListener('click', function() {
+    quote5Button.setAttribute('class', 'hidden');
+    modal5.style.display = "flex";
+    modalContent5.textContent = longQuote5;
+    quote5.textContent = shortQuote5;
+    quote5Card.setAttribute('style', 'max-width: 150px');
+});
+
+var span = document.getElementsByClassName("close5")[0]
+
+span.onclick = function() {
+    modal5.style.display = "none";
   }

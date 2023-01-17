@@ -4,8 +4,57 @@
 
 .mainquotedisplay {
   margin:  15px; 
-  display: inline-block;
+  display: block;
   flex-direction: row;
+}
+
+#octoTop {
+  display: flex;
+  justify-content: center;
+}
+
+#octoMid1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#quote1card {
+  justify-content: center;
+}
+
+#quote2card {
+  margin-left: 250px;
+}
+
+#quote3card {
+  margin-right: 250px;
+}
+
+#quote6card {
+  margin-left: 250px;
+}
+
+#quote7card {
+  margin-right: 250px;
+}
+
+#quote8card {
+  justify-content: center;
+}
+
+#octoMid2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#octoMid3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#octoBottom {
+  display: flex;
+  justify-content: center;
 }
 
 .quotecard {
@@ -19,6 +68,7 @@
     border-radius: 5px;
     box-shadow: 5px 5px 3px rgb(34, 34, 34);
     font-family: 'Times New Roman', Times, serif;
+    transition: 2s;
 }
 
 .quotecard:hover {
@@ -41,7 +91,7 @@
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+      background-image: linear-gradient(to bottom right, rgba(156, 156, 156, 0.548), rgb(65, 65, 65));
       margin: 15%; /* 15% from the top and centered */
       padding: 20px;
       border: 1px solid #888;
@@ -52,16 +102,16 @@
     }
     
     /* The Close Button */
-    .close {
-      color: #aaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
+.close {
+    color: #aaa;
+    float: center;
+    font-size: 28px;
+    font-weight: bold;
     }
     
-    .close:hover,
-    .close:focus {
-      color: black;
+.close:hover,
+.close:focus {
+    color: black;
     text-decoration: none;
     cursor: pointer;
     }
