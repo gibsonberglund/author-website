@@ -8,27 +8,24 @@
   <link rel="stylesheet" type="text/css" href="./assets/reset.css">
   <link rel="stylesheet" type="text/css" href="./assets/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link
+  rel="stylesheet"
+  href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
 </head>
 
 <body class="background">
     <header class="header">
-        <navbar class="text-left">
-            <li>
-                <a class="text-right">About</a>
-            </li>
-            <li>
-                <a class="text-right">Contact</a>
-            </li>
-        </navbar>
         <h1 class="text-center"> Gibson Berglund <small> AUTHOR - POET </small></h1>
     </header>
-    <section class="mainquotedisplay">
+    <section id="mainquotedisplay">
 
     <div id="octoTop">
         <div id="quote1card" class="quotecard">
             <p id="quote1" class="quote">She pulls me through the door and throws her arms around me</p>
             <btn id="quote1button" class="hidden">Keep Reading</btn>
+            <btn id="aboutbutton1" class="hidden">About</btn>
+            <btn id="aboutauthor1" class="hidden">About the author</btn>
         </div>
             <div id="modal1" class="modal">
                 <span id="close1" class="close">&times;</span>
@@ -40,6 +37,7 @@
         <div id="quote2card" class="quotecard">
             <p id="quote2" class="quote">the Earth a broken mirror reflecting a broken sky</p>
             <btn id="quote2button" class="hidden">Keep Reading</btn>
+            <btn id="aboutbutton2" class="hidden">About</btn>
         </div>
             <div id="modal2" class="modal">
                 <span class="close2">&times;</span>
@@ -49,6 +47,7 @@
         <div id="quote3card" class="quotecard">
             <p id="quote3" class="quote">I woke not from sleep but only a heavy doze</p>
             <btn id="quote3button" class="hidden">Keep Reading</btn>
+            <btn id="aboutbutton3" class="hidden">About</btn>
         </div>
             <div id="modal3" class="modal">
                 <span class="close3">&times;</span>
@@ -61,16 +60,22 @@
         <div id="quote4card" class="quotecard">
             <p id="quote4" class="quote">This protest culture I’d come to write about had evolved into a whole new animal</p>
             <btn id="quote4button" class="hidden">Keep Reading</btn>
+            <btn id="aboutbutton4" class="hidden">About</btn>
         </div>
             <div id="modal4" class="modal">
                 <span class="close4">&times;</span>
                     <pre id="modalcontent4" class="modal-content"></pre>
             </div>
-
+<!--
+        <div id="octocenter">
+            <p id="centerquote">CHOOSE YOUR ADVENTURE</p>
+        </div>
+    -->
 
         <div id="quote5card" class="quotecard">
             <pre id="quote5" class="quote"></pre>
             <btn id="quote5button" class="hidden">Keep Reading</btn>
+            <btn id="aboutbutton5" class="hidden">About</btn>
         </div>
             <div id="modal5" class="modal">
                 <span class="close5">&times;</span>
@@ -119,11 +124,22 @@
     </div>
     </section>
 
-        <p id="quote9" class="quote"></p>
-        <p id="quote10" class="quote"></p>
-        <p id="quote11" class="quote"></p>
-        <p id="quote12" class="quote"></p>
+    <section id="authorpage" class="hidden">
+        <img id="profilepic" class="hidden" src="./assets/images/profile-pic.jpg">
+        <div id="authorcard" class="hidden"></div>
     </section>
 
+<!--
+<section id="puzzle1">
+    <ul class="shufflepuzzle" id="ui-sortable">
+        <li id="tile1" class="ui-state-default">So trip unto writ</li>
+        <li id="tile2" class="ui-state-default">As writ to a trip</li>
+        <li id="tile3" class="ui-state-default">The penny dropped</li>
+        <li id="tile4" class="ui-state-default">And fell to bits</li>
+    </ul>
+</section>
+-->
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./assets/script.js"></script>
 </body>

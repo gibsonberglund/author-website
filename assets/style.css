@@ -2,7 +2,7 @@
     background-image: linear-gradient(to bottom right, rgba(156, 156, 156, 0.548), rgb(65, 65, 65));
 }
 
-.mainquotedisplay {
+#mainquotedisplay {
   margin:  15px; 
   display: block;
   flex-direction: row;
@@ -46,6 +46,14 @@
   display: flex;
   justify-content: space-evenly;
 }
+/*
+#centerquote {
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  font-size: large;
+}
+*/
 
 #octoMid3 {
   display: flex;
@@ -61,11 +69,11 @@
     display: inline-block;
     text-align: center;
     max-width: 150px;
-    padding: 5px;
+    padding: 20px;
     margin: 3px;
     background-color: rgb(206, 206, 206);
     border: hidden;
-    border-radius: 5px;
+    border-radius: 70% / 65%;
     box-shadow: 5px 5px 3px rgb(34, 34, 34);
     font-family: 'Times New Roman', Times, serif;
     transition: 2s;
@@ -121,7 +129,7 @@
 }
 
 .button {
-  display: block;
+  display: inline-block;
   width: 100px;
   height: 25px;
   background-color: rgb(64, 64, 155);
@@ -133,4 +141,46 @@
 .button:hover {
   color: rgb(144, 76, 76);
   background-color: rgb(106, 106, 143);
+}
+
+.authorbutton {
+  display: inline-block;
+  width: 150px;
+  height: 25px;
+  background-color: rgb(64, 64, 155);
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.authorbutton:hover {
+  color: rgb(144, 76, 76);
+  background-color: rgb(106, 106, 143);
+}
+
+#authorpage {
+  display: grid;
+  justify-content: center;
+}
+
+#profilepic{
+  display: block;
+  max-width: 400px;
+}
+
+#authorcard {
+ position: absolute;
+ margin-left: 33%;
+ margin-top: 25%;
+  max-width: 500px;
+  transition: 2s;
+  color: white;
+}
+
+
+.tile {
+  margin: 2px;
+  padding: 3px;
+  background-color: white;
+  border-radius: 3px;
 }

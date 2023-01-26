@@ -95,6 +95,10 @@ The taxi rolls on down the street, gathering speed as we splash through dazzling
 giant, sleepless city. Lights and colors flow together all wet around me, along with the growl of an
 old engine, the hush of wind at the windows, an alien language on the radio.`
 
+let aboutQuote1 = `This is an exerpt from the first chapter of a heretofore unpublished novel called Alley Cats And Aliens.
+The novel is a surreal, stream-of-consciousness ombudsroman that follows the foibles of Dylan Montravine,
+an inept American English teacher living in Shanghai.`
+
 
 //Quote 2
 let midQuote2 = `The rain has stopped and the clouds, black as coal-fired smoke, begin to break apart and blow away
@@ -443,8 +447,13 @@ As writ to a trip.
 The penny dropped
 And fell to bits.
 `
+let authorBlurb = `Gibson Berglund is a poet and aspiring novelist.
+Originally from Minneapolis, MN, much of his writing is based on his experiences
+living and working in China and South America, most recently as an ESL teacher in Chile.
+He has been a regular contributor at spoken word clubs in Minnesota, Colorado, and in Shanghai. `
 
-
+//main quote display variable
+let mainQuoteDisplay = document.querySelector('#mainquotedisplay');
 
 //QUOTECARD 1
 //set variables
@@ -453,21 +462,26 @@ let modal1 = document.querySelector('#modal1');
 let modalContent1 = document.querySelector('#modalcontent1');
 let quote1Button = document.querySelector('#quote1button');
 let quote1Card = document.querySelector('#quote1card');
+let aboutButton1 = document.querySelector('#aboutbutton1');
+let aboutAuthor1 = document.querySelector('#aboutauthor1');
+let authorCard = document.querySelector('#authorcard'); 
+let authorPage = document.querySelector('#authorpage');
+let profilePic = document.querySelector('#profilepic');
 
 //listens for click on one of the quote cards
 quote1.addEventListener('click', function() {
 //changes size and content when clicked
-    console.log("why");
     quote1.textContent = midQuote1;
-    console.log("not");
     quote1Button.setAttribute('class', 'button');
-    quote1Card.setAttribute('style', 'max-width: 450px');
+    aboutButton1.setAttribute('class', 'button');
+    quote1Card.setAttribute('style', 'max-width: 550px');
 });
 
 //listens for click on 'keep reading' button
 quote1Button.addEventListener('click', function() {
-  //hides button
+  //hides buttons
     quote1Button.setAttribute('class', 'hidden');
+    aboutButton1.setAttribute('class', 'hidden');
   //displays modal with quote content
     modal1.style.display = "flex";
     modalContent1.textContent = longQuote1;
@@ -481,7 +495,35 @@ var span = document.getElementById("close1");
 
 span.onclick = function() {
     modal1.style.display = "none";
+
   }
+
+
+aboutButton1.addEventListener('click', function() {
+  //hides buttons
+    quote1Button.setAttribute('class', 'hidden');
+    aboutButton1.setAttribute('class', 'hidden');
+    quote1Card.setAttribute('style', 'max-width: 400px');
+
+  //displays 'about' content inside of quote card
+  quote1.textContent = aboutQuote1;
+  aboutAuthor1.setAttribute('class', 'authorbutton');
+  console.log('hello');
+});
+
+aboutAuthor1.addEventListener('click', function() {
+  quote1Card.setAttribute('class', 'hidden');
+  quote2Card.setAttribute('class', 'hidden');
+  quote3Card.setAttribute('class', 'hidden');
+  quote4Card.setAttribute('class', 'hidden');
+  quote5Card.setAttribute('class', 'hidden');
+  authorPage.setAttribute('class', 'authorpage');
+  authorCard.setAttribute('class', 'authorcard');
+  profilePic.setAttribute('class', 'profilepic');
+  authorCard.textContent = authorBlurb;
+  
+})
+
 
 //QUOTECARD 2
 let quote2 = document.querySelector('#quote2');
@@ -489,16 +531,19 @@ let modal2 = document.querySelector('#modal2');
 let modalContent2 = document.querySelector('#modalcontent2');
 let quote2Button = document.querySelector('#quote2button');
 let quote2Card = document.querySelector('#quote2card');
+let aboutButton2 = document.querySelector('#aboutbutton2');
 
   quote2.addEventListener('click', function() {
     console.log("are you there");
     quote2.textContent = midQuote2
     quote2Button.setAttribute('class', 'button');
+    aboutButton2.setAttribute('class', 'button');
     quote2Card.setAttribute('style', 'max-width: 450px');
 });
 
 quote2Button.addEventListener('click', function() {
     quote2Button.setAttribute('class', 'hidden');
+    aboutButton2.setAttribute('class', 'hidden');
     modal2.style.display = "flex";
     modalContent2.textContent = longQuote2;
     quote2.textContent = "the Earth a broken mirror reflecting a broken sky";
@@ -517,15 +562,18 @@ let modal3 = document.querySelector('#modal3');
 let modalContent3 = document.querySelector('#modalcontent3');
 let quote3Button = document.querySelector('#quote3button');
 let quote3Card = document.querySelector('#quote3card');
+let aboutButton3 = document.querySelector('#aboutbutton3');
 
   quote3.addEventListener('click', function() {
     quote3.textContent = midQuote3
     quote3Button.setAttribute('class', 'button');
+    aboutButton1.setAttribute('class', 'button');
     quote3Card.setAttribute('style', 'max-width: 450px');
 });
 
 quote3Button.addEventListener('click', function() {
     quote3Button.setAttribute('class', 'hidden');
+    aboutButton3.setAttribute('class', 'hidden');
     modal3.style.display = "flex";
     modalContent3.textContent = longQuote3;
     quote3.textContent = "I woke not from sleep but only a heavy doze";
@@ -544,15 +592,18 @@ let modal4 = document.querySelector('#modal4');
 let modalContent4 = document.querySelector('#modalcontent4');
 let quote4Button = document.querySelector('#quote4button');
 let quote4Card = document.querySelector('#quote4card');
+let aboutButton4 = document.querySelector('#aboutbutton4');
 
   quote4.addEventListener('click', function() {
     quote4.textContent = midQuote4
     quote4Button.setAttribute('class', 'button');
+    aboutButton1.setAttribute('class', 'button');
     quote4Card.setAttribute('style', 'max-width: 450px');
 });
 
 quote4Button.addEventListener('click', function() {
     quote4Button.setAttribute('class', 'hidden');
+    aboutButton4.setAttribute('class', 'hidden');
     modal4.style.display = "flex";
     modalContent4.textContent = longQuote4;
     quote4.textContent = "This protest culture I’d come to write about had evolved into a whole new animal";
@@ -571,17 +622,20 @@ let modal5 = document.querySelector('#modal5');
 let modalContent5 = document.querySelector('#modalcontent5');
 let quote5Button = document.querySelector('#quote5button');
 let quote5Card = document.querySelector('#quote5card');
+let aboutButton5 = document.querySelector('#aboutbutton5');
 
 quote5.textContent = shortQuote5;
 
   quote5.addEventListener('click', function() {
     quote5.textContent = midQuote5;
     quote5Button.setAttribute('class', 'button');
+    aboutButton1.setAttribute('class', 'button');
     quote5Card.setAttribute('style', 'max-width: 450px');
 });
 
 quote5Button.addEventListener('click', function() {
     quote5Button.setAttribute('class', 'hidden');
+    aboutButton5.setAttribute('class', 'hidden');
     modal5.style.display = "flex";
     modalContent5.textContent = longQuote5;
     quote5.textContent = shortQuote5;
@@ -593,3 +647,9 @@ var span = document.getElementsByClassName("close5")[0]
 span.onclick = function() {
     modal5.style.display = "none";
   }
+
+var shufflePuzzle = document.querySelector('#shufflepuzzle');
+
+$('.shufflepuzzle').sortable({
+  grid: [1, 4]
+});
