@@ -224,6 +224,10 @@ can’t tell her the truth, but one day I hope to.
 “I’m alive, aren’t I?”
 She hums with laughter, “I’m glad you are.”`
 
+let aboutQuote2 = `This is an exerpt from the beginning of Part 2 of a heretofore unpublished novel called Alley Cats And Aliens.
+The novel is a surreal, stream-of-consciousness ombudsroman that follows the foibles of Dylan Montravine,
+an inept American English teacher living in Shanghai.`
+
 //Quote 3
 let midQuote3 = `I woke not from sleep but only a heavy doze, kept on edge all night by the cumbia beats from the
 bar next door rattling the bars on the windows, and the snap-rattle-whacking of vagabond drums, the anarchists
@@ -318,60 +322,78 @@ trash fires.
 There was some meat for my story, now I just needed a place to write it down.
 `
 
+let aboutQuote3 = `This is an excerpt from the first chapter of a novel in progress, currently title Stray Dog To The Witchdoctor.
+This story follows the gonzo anthropologist Dylan Montravine through the surreal landscape of Santiago, Chile during the Estaido
+Social of 2019. As I continue to develop and write this novel, my aim is to create a millenial Hunter S. Thompson in a Murkami novel,
+but set in a South American socio-political crisis.`
+
 //Quote 4
-let midQuote4 = `This protest culture I’d come to write about had evolved into a whole new animal, and I’d been right there
-in the middle when it happened. The story was bigger and more important now than I’d ever expected, and I could scoop every
-journalist outside Chile if I acted fast enough.`
+let shortQuote4 = `a significant cultural line had been crossed`
 
-let longQuote4 = `This protest culture I’d come to write about had evolved into a whole new animal, and I’d been right there
-in the middle when it happened. The story was bigger and more important now than I’d ever expected, and I could scoop every
-journalist outside Chile if I acted fast enough.
-The problem was that the whole thrust of my story needed to change now, after all that had just transpired. What had been
-merely a more vivacious protest culture than most had suddenly exploded into a mass movement that had taken a whole week to
-reach its peak, and which threatened to shut down not just the capital, but the whole country. On the same day I’d been swept
-up in the millions on the street here in Santiago, other mass protests had occurred in every other major city.
+let midQuote4 = `	That in itself—the deploying of military forces to control the population—was an incredibly precarious political
+move, however necessary it may have been from an economic perspective. The dark reflection in Camila’s eyes, and in Rodrigo’s, and
+even in the news anchors’ as they relayed the message to us, was enough to infer that a significant cultural line had been crossed.`
 
-	Not coincidentally, all of my classes were still suspended the following week, and the whole city remained in a partial
-  lockdown. But the upheaval continued nonetheless. The peaceful masses had mostly shouted their piece and were spent, but
-  rioters carried on, still smashing, burning, and looting in random pockets throughout the city. As an effect—or maybe it was
-  actually the cause, hard to say—the curfews continued, from eight p.m. to six a.m. each day. Some businesses opened within
-  that window, but many still chose not to.
-Once again I had nothing else to do but write, so I sat at the rickety card table I used as a desk, looking out my long panorama
-windows at the pink and purple sunsets, writing down as many details as I could recall from the beginning of the subway riots
-until now.
-But, as had happened before, when it came to organizing the scenes and imbuing them with a linear purpose—making them ‘newsworthy’
-as an old-school reporter might have said—I felt helplessly unfocused. It was like my mind could only register individual scenes,
-but had no sense of how they connected. The only thing I was sure of was that I would make a case for the uprising. I would subtly,
-or maybe overtly, defend the civil disobedience and the disestablishmentarianism. But that was all I was sure about.
-Knowing the stakes for me as an aspiring journalist, a few days without progress made me quite anxious. After a couple glasses of
-wine failed to bring about any insights, I finally broke down and reached out to Wesley, the Australian reporter I’d abandoned in a
-sketchy drug deal last month. I tried calling first, the other line rang and rang, but he never picked up. So I settled for writing
-him a message:
 
-Hey there Wes, member me? Sorry for bailing on ya the other night, hope ya didn get jumped. Anyway, my story got blown out the water
-last week, didn’t yours? I could yse some help. Hit me back any tim
+//Change this to a better chapter
+let longQuote4 = `	The following two days we spent either in bed, in the kitchen, or on the balcony smoking cigarettes and listening
+to the sounds of battle in the distance, as well as the low rumblings of massive military convoys, which the president had finally
+called in to take hold of the situation.
+That in itself—the deploying of military forces to control the population—was an incredibly precarious political move, however necessary
+it may have been from an economic perspective. The dark reflection in Camila’s eyes, and in Rodrigo’s, and even in the news anchors’ as
+they relayed the message to us, was enough to infer that a significant cultural line had been crossed.
+It was the first time since the end of the dictatorship thirty years before, they explained, that the military had been activated against
+Chilean civilians. The immediate result was that looting came almost to a stop, but the protest crowd in Plaza De Dignidad grew
+dramatically day by day, peaceful while the sun was up, but devolving into riots each night.
+Due to strict curfews, as well as business owners choosing not to unlock their doors in any case, the surrounding city seemed deserted,
+save for the sporadic clashing of the army and the cops against guerrilla activists and mercenary looters.
 
-A few hours later, when he still hadn’t responded or even opened the message, my frustration doubled, and I had to go out and
-search all over for an open botilleria to buy another bottle of wine. A couple glasses after that, I had to admit that one reason
-it was so hard to write was because I was running out of money. This fancy room in a rich neighborhood had worn out my bank account,
-and I was spending so much on booze that I was actually too ashamed to calculate the true cost. In any case, I couldn’t afford to
-continue renting here, now that Val’s original contract was ending soon, and I would need to sign a new rental agreement myself in
-order to stay.
-I might have been doomed to another rundown hostel or rat-trap rental had it not been for a coincidence the night of the mass protest,
-when I’d asked Jorge about how he’d acquired his bizarre apartment—battered as it was, the building was historic and the location was
-absolutely prime. As Jorge had explained, it had originally been a single stately home for one of the founding families of Chile, a
-hundred and fifty years ago. Now it was divided into five separate apartments, each one a whole floor to itself, filled with spacious,
-large-windowed rooms, as well as narrow chambers and nearly inaccessible closets, all connected in a maze-like pattern due to the
-integration of what used to be separate servants’ quarters, halls, and stairways.
-Jorge had also mentioned that he was struggling to afford it now, since his friend who had co-signed the contract and moved in along
-with him and Benedicto, had quickly changed his mind and moved out.
-“Son of a bitch couldn’t handle it.” Jorge’d lamented.
-“Couldn’t handle what?”
-“Benedicto’s lifestyle."
-I’d tried to ask what he meant, but he wouldn’t elaborate further. In any case, it seemed quite convenient now that I’d made quick
-friends with Jorge. I texted him about the empty room, and heard back the same day that yes, he’d be happy to rent me the spare room,
-for a much lower rent than I was currently paying, so long as I could, “survive in this house of terror.”
+Camila finally went home on Monday afternoon, though even then it was complicated to do so. Most businesses remained shut, hardly any
+public transportation was running, even hailing a private ride took almost an hour, rather than the usual few minutes.
+I kissed her goodbye at the front gate of the building. I was surprised that even after being locked in with her the whole weekend, I
+didn’t want her to leave. But she needed to see her parents of course, what with the national crisis and all.
+
+The week that followed was slow and tense. All my classes canceled, nothing open and nowhere to go besides the supermarket, and that
+place surrounded by guards as if it were some strategic fort. I relished the time to write, at first. But the events of the weekend
+didn’t feel like the end of the story at all, it felt more like a beginning, and everything I’d tried to cover so far had only been a
+prologue. Events were headed somewhere even more fascinating, more historically significant, and it felt like jumping the gun to start
+writing about it now.
+So I sat at my desk and drank my stash dry, watching smoggy sunsets with an endless soundtrack of cacerolazos clinking spoons on metal
+pots echoing all over the city, and the growling of military trucks prowling the empty avenues.
+By Friday, a week after things had begun, the riots and looting were much sparser, the military backed off a bit, and the city opened
+up just a little. One might have expected that the major demonstrations were over. Peaceful rallies had continued every day in Plaza De
+Dignidad, but the citywide lockdown had contained the most chaotic elements and brought them down to a simmer.
+
+At this point I wasn’t particularly concerned about any outright violence breaking out—there didn’t seem to be murderous intent on any
+side, this wasn’t a war—and now I was itching to get out and observe some of the action, maybe even participate a little. So it felt
+fortuitous when Camila called me that afternoon, and asked if I wanted to join her for that day’s march on Plaza De Dignidad, which was
+expected to be huge. She asked me to meet her at a friend of her brother’s apartment, a building directly at the foot of Santa Lucia
+(the sacred hill in the center of the city topped with the ruins of several civilizations).
+On the way there I saw the streets hectic with movement, protesters streaming towards Plaza De Dignidad, while businesses scrambled to
+close up, intersections almost gridlocked by excited pedestrians. I rang the doorbell of a battered antique mansion, at what I assumed
+to be the right entrance, an iron gate set in a graffiti-covered red stone façade. Camila sprang out from the shadows of the stairwell
+with a bright smile and let me in.
+Upstairs in the apartment—in a high-ceilinged sitting room with peeling walls and cracked wooden rafters—she introduced me to some
+friends of her brother. Jorge, the owner of the apartment was a broad-bodied and jovial looking guy, who greeted me with a comment I
+didn’t understand, “va a estar la caga por la chucha weon conchatumadre,” but which got a good laugh out of the others.
+There was Diego, a studious looking guy in a black turtleneck, with turtle-shell glasses and a goatee, and then there was Benedicto,
+who lived here with Jorge, the artist who painted with needle and thread on fabric canvasses, whose studio—through the French doors at
+the back of the sitting room—looked like a typhoon had hit a tailor shop.
+“Did you bring a limon?” Jorge asked me with a grin.
+“No, shit was I supposed to?”
+“For the tear gas,” Diego added, “so you can breathe.”
+“Oh right,” it seemed obvious to me now, recalling that it had been only a couple of months ago Camila had saved me with that very
+thing.
+“No worry, I have for you,” Jorge assured me, and went off to retrieve one from another room in back.
+“Are you ready?” Camila nudged me, smiling excitedly, raising her eyebrows. “Going to be a huge! Un manifestacion por la historia!”
+We all said cheers and drank a couple of beers together, me following the Chileno as best I could. And then, on a cue that went over
+my head, they all stood up and tied bandannas around their necks, and together we hurried down the spiral stairs and out the door.
+
 `
+let aboutQuote4 = `This is an excerpt from the midpoint of a novel in progress, currently title Stray Dog To The Witchdoctor.
+This story follows the gonzo anthropologist Dylan Montravine through the surreal landscape of Santiago, Chile during the Estaido
+Social of 2019. As I continue to develop and write this novel, my aim is to create a millenial Hunter S. Thompson in a Murkami novel,
+but set in a South American socio-political crisis.`
 
 //Quote 5
 let shortQuote5 = `If you trip,
@@ -447,6 +469,133 @@ As writ to a trip.
 The penny dropped
 And fell to bits.
 `
+
+let aboutQuote5 = `This is an excerpt of my first poem to get published, titled Voyage On Liberty Cap, which appeared
+in Issue 5 of the Wild Roof Journal.`
+
+let shortQuote6 = `they try to do the same to you, all face-to-face and flesh-to-flesh`
+
+let midQuote6 = `What was it like to encounter a hitherto unknown ethno-cultural group of people,
+when they show up at the edge of your town with thousands of fearsome, alien-looking warriors,
+and now you have to pick up a sharp hunk of metal and try to stab them all to death while they
+try to do the same to you, all face-to-face and flesh-to-flesh, or else you and everyone you know
+will probably be dead by the end of the day?`
+
+let longQuote6 = `
+
+At some point near the beginning of 2021, I needed something to listen to while walking to the grocery store,
+and having had my fill of music at that moment (a pretty unusual feeling for me) I decided to try listening to
+a podcast, and just through random choice tried out Hardcore History with Dan Carlin.
+
+If you are already familiar with Dan Carlin you probably don’t need to hear me explain it, but as someone new to
+his podcast I was totally blown away. He talks about ancient history in a way that makes it relatable, visceral,
+and—unlike so many other historians—human. With Hardcore History, you don’t just get an explanation of events,
+you get an experiential dive into the time period.
+
+I’ve always been enamored with ancient history, but usually find historical non-fiction writing and documentaries
+so dry and lifeless that it kind of kills the magic of learning about the subject. With Dan Carlin, not only does
+the history come alive, but it somehow feels even more magical and fascinating than it did before—he has a way of
+making the mystery ever deeper, even as he uncovers it.
+
+And so over the last year I spent many many hours listening to those very very old true stories, rather than reading
+modern fiction as I typically do.
+
+One of the refrains that Dan Carlin repeats in many of his episodes is that ‘history has ruined fiction’ for him.
+The first time I heard him say that I thought, that’s silly, it would never happen to me. I love history, but not as
+much as I love novels. But then after several months of listening to pretty much nothing else, I started to wonder if
+maybe he was right, and that nothing fictional can even compare to real history.
+
+It might sound strange at first, what with the majority of historical non-fiction being portrayed dull as a rusty spoon,
+but when you start to fathom the lives that some of these remarkable people led—real lives that we can verify with relative
+certainty—it’s kind of astounding we have any need for fiction at all.
+
+I used to think that right now we live in a time of extreme experience, where we modern humans get to feel, see, and hear things
+that our ancestors couldn’t even dream of. In some ways that’s true, but in many ways the reality is the opposite. The extremes of
+experience that ancient people went through would be utterly mind-shattering for most modern people today, experiences that we can’t
+begin to comprehend from our modern vantage point.
+
+What was it like to encounter a hitherto unknown ethno-cultural group of people, when they show up at the edge of your town with
+thousands of fearsome, alien-looking warriors, and now you have to pick up a sharp hunk of metal and try to stab them all to death
+while they try to do the same to you, all face-to-face and flesh-to-flesh, or else you and everyone you know will probably be dead by
+the end of the day?
+
+That’s the kind of shit that happened hundreds and thousands of times to our own ancestors, happened to many of them multiple times,
+and certain extraordinary individuals experienced situations like that dozens of times over; quite a few of them even seemed to enjoy it,
+according to ancient accounts.
+
+But instead of learning about those real incredible people and real incredible moments, here we are reading fabricated pulp about
+horny teenage robots or something. What’s the deal with that?
+
+…
+
+But I don’t really feel that way. Regardless of how fascinating real history may be, I can’t even imagine giving up all the great fictional
+stories I’ve read, watched, or listened to in my life. I couldn’t even consider sacrificing all the inspiration and meaning and empowerment
+I’ve gleaned from them.
+
+There are truly unbelievable stories in the past, more incredible than any fiction, and yet I still feel that fiction serves a separate,
+yet equally essential, purpose. Because no matter how incredible a true story may be, we cannot experience it as an audience without making
+fundamental assumptions—about the states of mind of the people involved, their subconscious motivations, the deep nature of their relationships,
+the actual sensory input they experienced, where they put their attention and focus—that automatically fictionalize the account.
+In order for us as the audience to in any way ‘experience’ the story, it must have some semblance of narrative, and if there is any sense of
+narrative at all, the story has moved beyond pure historical fact and towards fiction.
+
+Which leads to the next source of value in fiction: the meaning. While I don’t think all stories should have a clear ‘message’ to them, I think
+any good narrative will at least ask some questions around an existential theme or philosophy. Here again, if we do this to a historical account
+we are automatically making assumptions and applying a perspective, and probably cherry picking events that fit the intended narrative.
+While I think some amount of theme and philosophical narrative can reasonably be applied to historical accounts with them still qualifying as
+non-fiction, it does create a major limitation to the narrative if you want to remain factually accurate. This is a limitation that fiction does
+not have, which sets it free to explore so many possibilities within the human spirit that non-fiction, by its own virtues, cannot.
+
+Finally, there is style. Once again, exceptionally well-written non-fiction may be able to pull off a certain amount of style without undermining
+its integrity, but once again it will be severely limited in this regard. Every stylistic choice by an author necessitates a perspective and
+underlying assumptions, and therefore can only go so far before it betrays its factuality.
+
+A fictional manuscript, on the other hand, can take its style to the furthest extremes, and not only will this not compromise the story, it will
+often enhance it.
+
+To illustrate, I’m going to cross-reference the non-fiction book Empire Of The Summer Moon, which explores the culture and geopolitics of the
+Comanche empire, with the fictional Blood Meridian, which (in some chapters) describes a bloody conflict between the Apache nation and a mercenary
+militia.
+
+(I certainly don’t mean to suggest that Comanches and Apaches were the same ethno-cultural group or that we can treat them as interchangeable,
+but for the sake of this comparison I believe that they are similar enough; S.C. Gwynne, the author of Empire Of The Summer Moon actually quotes
+Cormac McCarthy at the beginning of the book, and it’s clear his non-fiction investigation of the Comanches was partly inspired by McCarthy’s
+writing about the Apaches… further evidence to support my thesis here about the different but equally important functions of fiction and non-fiction).
+
+Empire Of The Summer Moon: “For now, Mackenzie was the instrument of retribution. He had been dispatched to kill Comanches in their Great Plains
+fastness because, six years after the end of the Civil War, the western frontier was an open and bleeding wound, a smoking ruin littered with corpses
+and charred chimneys, a place where anarchy and torture killings had replaced the rule of law, where Indians and especially Comanches raided at will.
+Victorious in war, unchallenged by foreign foes in North America for the first time in its history, the Union now found itself unable to deal with the
+handful of remaining Indian tribes that had not been destroyed, assimilated, or forced to retreat meekly onto reservations where they quickly learned
+the meaning of abject subjugation and starvation. The hostiles were all residents of the Great Plains; all were mounted, well armed, and driven now by
+a mixture of vengeance and political desperation. They were Comanches, Kiowas, Arapahoes, Cheyennes, and Western Sioux. For Mackenzie on the southern
+plains, Comanches were the obvious target: No tribe in the history of the Spanish, French, Mexican, Texan, and American occupations of this land had
+ever caused so much havoc and death. None was even a close second.”
+
+Blood Meridian: “A legion of horribles, hundreds in number, half naked or clad in costumes attic or biblical or wardrobed out of a fevered dream with
+the skins of animals and silk finery and pieces of uniform still tracked with the blood of prior owners, coats of slain dragoons, frogged and braided
+cavalry jackets, one in a stovepipe hat and one with an umbrella and one in white stockings and a bloodstained wedding veil and some in headgear of crane
+feathers or rawhide helmets that bore the horns of bull or buffalo and one in a pigeon-tailed coat worn backwards and otherwise naked and one in the armor
+of a spanish conquistador, the breastplate and pauldrons deeply dented with old blows of mace or saber done in another country by men whose very bones were
+dust and many with their braids spliced up with the hair of other beasts until they trailed upon the ground and their horses’ ears and tails worked with
+bits of brightly colored cloth and one whose horse’s whole head was painted crimson red and all the horsemen’s faces gaudy and grotesque with daubings like
+a company of mounted clowns, death hilarious, all howling in a barbarous tongue and riding down upon them like a horde from a hell more horrible yet than
+the brimstone land of Christian reckoning, screeching and yammering and clothed in smoke like those vaporous beings in regions beyond right knowing where
+the eye wanders and the lip jerks and drools.”
+
+You will notice that, despite being exceptionally descriptive and stylized for its genre, Empire gives us more of a bird’s-eye view, a generalized and
+somewhat detached explanation of something happening elsewhere to other people. Meridian on the other hand, puts us directly in the experience, as if we
+are there in the protagonist’s shoes, feeling what he’s feeling. Both fascinating, both highly engaging, with similar yet different intentions and similar
+yet different effects on the reader.
+
+So… all this is just a long-winded way of saying that, while real history is head-bustingly unbelievable and is utterly invaluable for so many reasons, that
+does not mean that fiction is not also very valuable for its own reasons. Fiction serves a similar but essentially different purpose.
+And the great thing is that there is plenty of room for both. There is no reason one cannot consume equal parts history and fantasy, and I believe anyone
+who does so will see how the differences between the two are part of the reason each is so valuable.
+`
+
+let aboutQuote6 = `This is an excerpt of a blog post I wrote titled What's The Point Of Fiction? My full blog is available here.`
+
 let authorBlurb = `Gibson Berglund is a poet and aspiring novelist.
 Originally from Minneapolis, MN, much of his writing is based on his experiences
 living and working in China and South America, most recently as an ESL teacher in Chile.
@@ -454,6 +603,11 @@ He has been a regular contributor at spoken word clubs in Minnesota, Colorado, a
 
 //main quote display variable
 let mainQuoteDisplay = document.querySelector('#mainquotedisplay');
+
+//Author page
+let authorCard = document.querySelector('#authorcard'); 
+let authorPage = document.querySelector('#authorpage');
+let profilePic = document.querySelector('#profilepic');
 
 //QUOTECARD 1
 //set variables
@@ -464,9 +618,6 @@ let quote1Button = document.querySelector('#quote1button');
 let quote1Card = document.querySelector('#quote1card');
 let aboutButton1 = document.querySelector('#aboutbutton1');
 let aboutAuthor1 = document.querySelector('#aboutauthor1');
-let authorCard = document.querySelector('#authorcard'); 
-let authorPage = document.querySelector('#authorpage');
-let profilePic = document.querySelector('#profilepic');
 
 //listens for click on one of the quote cards
 quote1.addEventListener('click', function() {
@@ -556,6 +707,30 @@ span.onclick = function() {
     modal2.style.display = "none";
   }
 
+  aboutButton1.addEventListener('click', function() {
+    //hides buttons
+      quote1Button.setAttribute('class', 'hidden');
+      aboutButton1.setAttribute('class', 'hidden');
+      quote1Card.setAttribute('style', 'max-width: 400px');
+  
+    //displays 'about' content inside of quote card
+    quote1.textContent = aboutQuote1;
+    aboutAuthor1.setAttribute('class', 'authorbutton');
+    console.log('hello');
+  });
+  
+  aboutAuthor1.addEventListener('click', function() {
+    quote1Card.setAttribute('class', 'hidden');
+    quote2Card.setAttribute('class', 'hidden');
+    quote3Card.setAttribute('class', 'hidden');
+    quote4Card.setAttribute('class', 'hidden');
+    quote5Card.setAttribute('class', 'hidden');
+    authorPage.setAttribute('class', 'authorpage');
+    authorCard.setAttribute('class', 'authorcard');
+    profilePic.setAttribute('class', 'profilepic');
+    authorCard.textContent = authorBlurb;
+    
+  })
 //QUOTECARD 3
 let quote3 = document.querySelector('#quote3');
 let modal3 = document.querySelector('#modal3');
@@ -597,7 +772,7 @@ let aboutButton4 = document.querySelector('#aboutbutton4');
   quote4.addEventListener('click', function() {
     quote4.textContent = midQuote4
     quote4Button.setAttribute('class', 'button');
-    aboutButton1.setAttribute('class', 'button');
+    aboutButton4.setAttribute('class', 'button');
     quote4Card.setAttribute('style', 'max-width: 450px');
 });
 
@@ -648,8 +823,75 @@ span.onclick = function() {
     modal5.style.display = "none";
   }
 
-var shufflePuzzle = document.querySelector('#shufflepuzzle');
+//Quote 6
+let quote6 = document.querySelector('#quote6');
+let modal6 = document.querySelector('#modal6');
+let modalContent6 = document.querySelector('#modalcontent6');
+let quote6Button = document.querySelector('#quote6button');
+let quote6Card = document.querySelector('#quote6card');
+let aboutButton6 = document.querySelector('#aboutbutton6');
+let aboutAuthor6 = document.querySelector('#aboutauthor6');
 
-$('.shufflepuzzle').sortable({
-  grid: [1, 4]
+quote6.textContent = shortQuote6;
+
+//listens for click on one of the quote cards
+quote6.addEventListener('click', function() {
+//changes size and content when clicked
+    quote6.textContent = midQuote6;
+    quote6Button.setAttribute('class', 'button');
+    aboutButton6.setAttribute('class', 'button');
+    quote6Card.setAttribute('style', 'max-width: 550px');
 });
+
+//listens for click on 'keep reading' button
+quote6Button.addEventListener('click', function() {
+  //hides buttons
+    quote6Button.setAttribute('class', 'hidden');
+    aboutButton6.setAttribute('class', 'hidden');
+  //displays modal with quote content
+    modal6.style.display = "flex";
+    modalContent6.textContent = longQuote6;
+  //reverts quote card to original state
+    quote6.textContent = shortQuote6;
+    quote6Card.setAttribute('style', 'max-width: 150px');
+});
+
+//button to close modal
+var span = document.getElementById("close6");
+
+span.onclick = function() {
+    modal6.style.display = "none";
+
+  }
+
+
+aboutButton6.addEventListener('click', function() {
+  //hides buttons
+    quote6Button.setAttribute('class', 'hidden');
+    aboutButton6.setAttribute('class', 'hidden');
+    quote6Card.setAttribute('style', 'max-width: 400px');
+
+  //displays 'about' content inside of quote card
+  quote6.textContent = aboutQuote6;
+  aboutAuthor6.setAttribute('class', 'authorbutton');
+});
+
+aboutAuthor6.addEventListener('click', function() {
+  quote1Card.setAttribute('class', 'hidden');
+  quote2Card.setAttribute('class', 'hidden');
+  quote3Card.setAttribute('class', 'hidden');
+  quote4Card.setAttribute('class', 'hidden');
+  quote5Card.setAttribute('class', 'hidden');
+  authorPage.setAttribute('class', 'authorpage');
+  authorCard.setAttribute('class', 'authorcard');
+  profilePic.setAttribute('class', 'profilepic');
+  authorCard.textContent = authorBlurb;
+  
+})
+
+
+// var shufflePuzzle = document.querySelector('#shufflepuzzle');
+
+// $('.shufflepuzzle').sortable({
+//   grid: [1, 4]
+// });

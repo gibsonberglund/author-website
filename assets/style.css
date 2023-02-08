@@ -65,6 +65,20 @@
   justify-content: center;
 }
 
+.quotedisplay {
+  display: block;
+}
+
+.quote {
+  margin: 5%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+
+}
+
 .quotecard {
     display: inline-block;
     text-align: center;
@@ -83,7 +97,6 @@
   background-color: rgb(144, 76, 76);
   cursor: pointer;
 }
-
 
 .modal {
     display: none; /* Hidden by default */
@@ -136,6 +149,8 @@
   color: white;
   font-size: 16px;
   text-align: center;
+  margin: 10px;
+  margin-top: -45px;
 }
 
 .button:hover {
@@ -163,7 +178,7 @@
   justify-content: center;
 }
 
-#profilepic{
+.profilepic{
   display: block;
   max-width: 400px;
 }
