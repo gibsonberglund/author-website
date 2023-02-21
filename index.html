@@ -12,11 +12,13 @@
   rel="stylesheet"
   href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
     />
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body class="background">
     <header class="header">
-        <h1 class="text-center"> Gibson Berglund <small> AUTHOR - POET </small></h1>
+        <h1 class="text-center"> Gibson Berglund 
+            <br><small> AUTHOR - POET </small></br></h1>
     </header>
     <section id="mainquotedisplay">
 
@@ -25,98 +27,114 @@
             <div id="quote1card" class="quotecard">
                 <p id="quote1" class="quote">She pulls me through the door and throws her arms around me</p>
             </div>
-            <div class="buttons">
-                <btn id="quote1button" class="hidden">Keep Reading</btn>
-                <btn id="aboutbutton1" class="hidden">About</btn>
-                <btn id="aboutauthor1" class="hidden">About the author</btn>
-            </div>
         </div>
             <div id="modal1" class="modal">
-                <span id="close1" class="close">&times;</span>
-                    <pre id="modalcontent1" class="modal-content"></pre>
+                <pre id="modalcontent1" class="modal-content"></pre>
             </div>
     </div>
         
     <div id="octoMid1">
-        <div id="quote2card" class="quotecard">
-            <p id="quote2" class="quote">the Earth a broken mirror reflecting a broken sky</p>
-            <btn id="quote2button" class="hidden">Keep Reading</btn>
-            <btn id="aboutbutton2" class="hidden">About</btn>
-            <btn id="aboutauthor2" class="hidden">About the author</btn>
-        </div>
-            <div id="modal2" class="modal">
-                <span class="close2">&times;</span>
+        <div id="octoMid1Left">
+            <div id="quote2card" class="quotecard">
+                <p id="quote2" class="quote">the Earth a broken mirror reflecting a broken sky</p>
+            </div>
+                <div id="modal2" class="modal">
                     <pre id="modalcontent2" class="modal-content"></pre>
-            </div>
-
-        <div id="quote3card" class="quotecard">
-            <p id="quote3" class="quote">I woke not from sleep but only a heavy doze</p>
-            <btn id="quote3button" class="hidden">Keep Reading</btn>
-            <btn id="aboutbutton3" class="hidden">About</btn>
-            <btn id="aboutauthor3" class="hidden">About the author</btn>
+                </div>
         </div>
-            <div id="modal3" class="modal">
-                <span class="close3">&times;</span>
-                    <pre id="modalcontent3" class="modal-content"></pre>
+
+        <div id="octMid1Right">
+            <div id="quote3card" class="quotecard">
+                <p id="quote3" class="quote">I woke not from sleep but only a heavy doze</p>
             </div>
+                <div id="modal3" class="modal">
+                    <span class="close3">&times;</span>
+                        <pre id="modalcontent3" class="modal-content"></pre>
+                </div>
+        </div>
         </div>
     </div>
 
     <div id="octoMid2">
+        <div id="octoMid2Left">
         <div id="quote4card" class="quotecard">
             <p id="quote4" class="quote">This protest culture I’d come to write about had evolved into a whole new animal</p>
-            <btn id="quote4button" class="hidden">Keep Reading</btn>
-            <btn id="aboutbutton4" class="hidden">About</btn>
-            <btn id="aboutauthor4" class="hidden">About the author</btn>
         </div>
             <div id="modal4" class="modal">
                 <span class="close4">&times;</span>
                     <pre id="modalcontent4" class="modal-content"></pre>
             </div>
-<!--
-        <div id="octocenter">
-            <p id="centerquote">CHOOSE YOUR ADVENTURE</p>
         </div>
-    -->
 
-        <div id="quote5card" class="quotecard">
-            <pre id="quote5" class="quote"></pre>
+        <div id="octocenter">
+            <p id="centerprompt">Choose Wisely</p>
+            <!--Quote 1-->
+            <btn id="quote1button" class="hidden">Keep Reading</btn>
+            <btn id="aboutbutton1" class="hidden">About</btn>
+            <!--Quote 2-->
+            <btn id="quote2button" class="hidden">Keep Reading</btn>
+            <btn id="aboutbutton2" class="hidden">About</btn>
+             <!--Quote 3-->
+            <btn id="quote3button" class="hidden">Keep Reading</btn>
+            <btn id="aboutbutton3" class="hidden">About</btn>
+            <!--Quote 4-->
+            <btn id="quote4button" class="hidden">Keep Reading</btn>
+            <btn id="aboutbutton4" class="hidden">About</btn>
+            <!--Quote 5-->
             <btn id="quote5button" class="hidden">Keep Reading</btn>
             <btn id="aboutbutton5" class="hidden">About</btn>
-            <btn id="aboutauthor5" class="hidden">About the author</btn>
+            <!--Quote 6-->
+            <btn id="quote6button" class="hidden">Keep Reading</btn>
+            <btn id="aboutbutton6" class="hidden">About</btn>
+            <!--Quote 7-->
+            <btn id="quote7button" class="hidden">Keep Reading</btn>
+            <btn id="aboutbutton7" class="hidden">About</btn>
+            <!--Author Info-->
+            <btn id="aboutauthorbtn" class="hidden">About the author</btn>
+            <section id="authorpage" class="hidden">
+                <img id="profilepic" class="hidden" src="./assets/images/author-profile-pic.jpg">
+                <div id="authorcard" class="hidden"></div>
+                <btn id="contactbtn" class="hidden">Contact Me</btn>
+            </section>
         </div>
-            <div id="modal5" class="modal">
-                <span class="close5">&times;</span>
-                    <pre id="modalcontent5" class="modal-content">
 
-                    </pre>
+        <div id="octoMid2Right">
+            <div id="quote5card" class="quotecard">
+                <p id="quote5" class="quote"></p>
             </div>
+                <div id="modal5" class="modal">
+                    <span class="close5">&times;</span>
+                        <pre id="modalcontent5" class="modal-content">
+
+                        </pre>
+                </div>
+        </div>
     </div>
 
     <div id="octoMid3">
-        <div id="quote6card" class="quotecard">
-            <p id="quote6" class="quote"></p>
-            <btn id="quote6button" class="hidden">Keep Reading</btn>
-            <btn id="aboutbutton6" class="hidden">About</btn>
-        </div>
-            <div id="modal6" class="modal">
-                <span class="close6">&times;</span>
-                    <pre id="modalcontent6" class="modal-content">
-
-                    </pre>
+        <div id='octoMid3Left'>
+            <div id="quote6card" class="quotecard">
+                <p id="quote6" class="quote"></p>
             </div>
+                <div id="modal6" class="modal">
+                    <span class="close6">&times;</span>
+                        <pre id="modalcontent6" class="modal-content">
 
-
-        <div id="quote7card" class="quotecard">
-            <p id="quote7" class="quote">She pulls me through the door and throws her arms around me</p>
-            <btn id="quote7button" class="hidden">Keep Reading</btn>
+                        </pre>
+                </div>
         </div>
+
+        <div id='octoMid3Right'>
+            <div id="quote7card" class="quotecard">
+                <p id="quote7" class="quote">How much there is to be gained from looking at bad art</p>
+            </div>
             <div id="modal7" class="modal">
                 <span class="close7">&times;</span>
                     <pre id="modalcontent7" class="modal-content">
 
                     </pre>
             </div>
+        </div>
     </div>
 
     <div id="octoBottom">
@@ -131,12 +149,13 @@
                     </pre>
             </div>
     </div>
+
+
+    <a href="https://github.com/gibsonberglund" class="hidden" id="webdevlink">Like my website? I'm also a web developer, click here if you're interested</a>
     </section>
 
-    <section id="authorpage" class="hidden">
-        <img id="profilepic" class="hidden" src="./assets/images/profile-pic.jpg">
-        <div id="authorcard" class="hidden"></div>
-    </section>
+
+
 
 <!--
 <section id="puzzle1">
@@ -149,6 +168,5 @@
 </section>
 -->
 
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./assets/script.js"></script>
 </body>

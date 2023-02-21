@@ -1,11 +1,21 @@
 .background {
-    background-image: linear-gradient(to bottom right, rgba(156, 156, 156, 0.548), rgb(65, 65, 65));
+    background-image: linear-gradient(to bottom right, rgba(84, 91, 166, 0.548), rgb(31, 57, 135));
 }
 
 #mainquotedisplay {
   margin:  15px; 
   display: block;
   flex-direction: row;
+}
+
+.header {
+  display: flex;
+  text-align: left;
+  margin: 1%;
+}
+
+.header h1{
+  font-size: 24px;
 }
 
 #octoTop {
@@ -18,24 +28,29 @@
   justify-content: space-evenly;
 }
 
+#centerprompt {
+  padding-top: 16%;
+  font-size: 36px;
+}
+
 #quote1card {
   justify-content: center;
 }
 
 #quote2card {
-  margin-left: 250px;
+  margin-left: 5%;
 }
 
 #quote3card {
-  margin-right: 250px;
+  margin-right: 5%;
 }
 
 #quote6card {
-  margin-left: 250px;
+  margin-left: 5%;
 }
 
 #quote7card {
-  margin-right: 250px;
+  margin-right: -15%;
 }
 
 #quote8card {
@@ -82,7 +97,7 @@
 .quotecard {
     display: inline-block;
     text-align: center;
-    max-width: 150px;
+    max-width: 250px;
     padding: 20px;
     margin: 3px;
     background-color: rgb(206, 206, 206);
@@ -180,7 +195,9 @@
 
 .profilepic{
   display: block;
+  margin-left: -1%;
   max-width: 400px;
+  border-radius: 50% / 50%;;
 }
 
 #authorcard {

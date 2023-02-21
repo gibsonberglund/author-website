@@ -1,4 +1,6 @@
 //Quote1
+let shortQuote1 = `She pulls me through the door and throws her arms around me`;
+
 let midQuote1 = `She pulls me through the door and throws her arms around me even though my clothes are soaking wet and
 my hair drips onto her cheeks.
 “You found it!” Her accent is impossibly complex, just as I remember it.
@@ -93,14 +95,16 @@ then gives the driver instructions while I climb in.
 “Welcome to China,” she smiles, closing the door.
 The taxi rolls on down the street, gathering speed as we splash through dazzling thoroughfares in a
 giant, sleepless city. Lights and colors flow together all wet around me, along with the growl of an
-old engine, the hush of wind at the windows, an alien language on the radio.`
+old engine, the hush of wind at the windows, an alien language on the radio.`;
 
 let aboutQuote1 = `This is an exerpt from the first chapter of a heretofore unpublished novel called Alley Cats And Aliens.
 The novel is a surreal, stream-of-consciousness ombudsroman that follows the foibles of Dylan Montravine,
-an inept American English teacher living in Shanghai.`
+an inept American English teacher living in Shanghai.`;
 
 
 //Quote 2
+let shortQuote2 = `The Earth a broken mirror reflecting a broken sky`;
+
 let midQuote2 = `The rain has stopped and the clouds, black as coal-fired smoke, begin to break apart and blow away
 as I cross the bridge over the train yard. Water has filled in the spaces between the tracks, making
 the Earth a broken mirror reflecting a broken sky. The sun bursts out of a crag in the clouds, red
@@ -222,17 +226,19 @@ can’t tell her the truth, but one day I hope to.
 “I wanted to drive my car at full speed, just to see if I could handle it.”
 “But you couldn’t handle it?”
 “I’m alive, aren’t I?”
-She hums with laughter, “I’m glad you are.”`
+She hums with laughter, “I’m glad you are.”`;
 
 let aboutQuote2 = `This is an exerpt from the beginning of Part 2 of a heretofore unpublished novel called Alley Cats And Aliens.
 The novel is a surreal, stream-of-consciousness ombudsroman that follows the foibles of Dylan Montravine,
-an inept American English teacher living in Shanghai.`
+an inept American English teacher living in Shanghai.`;
 
 //Quote 3
+let shortQuote3 = `I woke not from sleep but only a heavy doze`;
+
 let midQuote3 = `I woke not from sleep but only a heavy doze, kept on edge all night by the cumbia beats from the
 bar next door rattling the bars on the windows, and the snap-rattle-whacking of vagabond drums, the anarchists
 pounding bucket percussion in the Parque Forestal on the other side of the little blood-letting of water they
-call the Mapocho river.`
+call the Mapocho river.`;
 
 let longQuote3 = `I woke not from sleep but only a heavy doze, kept on edge all night by the cumbia beats from the
 bar next door rattling the bars on the windows, and the snap-rattle-whacking of vagabond drums, the anarchists
@@ -325,14 +331,14 @@ There was some meat for my story, now I just needed a place to write it down.
 let aboutQuote3 = `This is an excerpt from the first chapter of a novel in progress, currently title Stray Dog To The Witchdoctor.
 This story follows the gonzo anthropologist Dylan Montravine through the surreal landscape of Santiago, Chile during the Estaido
 Social of 2019. As I continue to develop and write this novel, my aim is to create a millenial Hunter S. Thompson in a Murkami novel,
-but set in a South American socio-political crisis.`
+but set in a South American socio-political crisis.`;
 
 //Quote 4
-let shortQuote4 = `a significant cultural line had been crossed`
+let shortQuote4 = `a significant cultural line had been crossed`;
 
 let midQuote4 = `	That in itself—the deploying of military forces to control the population—was an incredibly precarious political
 move, however necessary it may have been from an economic perspective. The dark reflection in Camila’s eyes, and in Rodrigo’s, and
-even in the news anchors’ as they relayed the message to us, was enough to infer that a significant cultural line had been crossed.`
+even in the news anchors’ as they relayed the message to us, was enough to infer that a significant cultural line had been crossed.`;
 
 
 //Change this to a better chapter
@@ -389,17 +395,17 @@ thing.
 We all said cheers and drank a couple of beers together, me following the Chileno as best I could. And then, on a cue that went over
 my head, they all stood up and tied bandannas around their necks, and together we hurried down the spiral stairs and out the door.
 
-`
+`;
 let aboutQuote4 = `This is an excerpt from the midpoint of a novel in progress, currently title Stray Dog To The Witchdoctor.
 This story follows the gonzo anthropologist Dylan Montravine through the surreal landscape of Santiago, Chile during the Estaido
 Social of 2019. As I continue to develop and write this novel, my aim is to create a millenial Hunter S. Thompson in a Murkami novel,
-but set in a South American socio-political crisis.`
+but set in a South American socio-political crisis.`;
 
 //Quote 5
 let shortQuote5 = `If you trip,
 Selah,
-Let the sails
-Carry the ship`
+let the sails
+carry the ship`;
 
 let midQuote5 = `If you trip
 Selah,
@@ -419,7 +425,7 @@ Breathe with your gut,
 Roll with the motion,
 Those eyes are your own
 And you are the ocean.
-`
+`;
 let longQuote5 = `If you trip
 Selah,
 Let the sails
@@ -468,18 +474,18 @@ So trip unto writ,
 As writ to a trip.
 The penny dropped
 And fell to bits.
-`
+`;
 
 let aboutQuote5 = `This is an excerpt of my first poem to get published, titled Voyage On Liberty Cap, which appeared
-in Issue 5 of the Wild Roof Journal.`
+in Issue 5 of the Wild Roof Journal.`;
 
-let shortQuote6 = `they try to do the same to you, all face-to-face and flesh-to-flesh`
+let shortQuote6 = `they try to do the same to you, all face-to-face and flesh-to-flesh`;
 
 let midQuote6 = `What was it like to encounter a hitherto unknown ethno-cultural group of people,
 when they show up at the edge of your town with thousands of fearsome, alien-looking warriors,
 and now you have to pick up a sharp hunk of metal and try to stab them all to death while they
 try to do the same to you, all face-to-face and flesh-to-flesh, or else you and everyone you know
-will probably be dead by the end of the day?`
+will probably be dead by the end of the day?`;
 
 let longQuote6 = `
 
@@ -592,22 +598,103 @@ So… all this is just a long-winded way of saying that, while real history is h
 does not mean that fiction is not also very valuable for its own reasons. Fiction serves a similar but essentially different purpose.
 And the great thing is that there is plenty of room for both. There is no reason one cannot consume equal parts history and fantasy, and I believe anyone
 who does so will see how the differences between the two are part of the reason each is so valuable.
-`
+`;
 
-let aboutQuote6 = `This is an excerpt of a blog post I wrote titled What's The Point Of Fiction? My full blog is available here.`
+let aboutQuote6 = `This is an excerpt of a blog post I wrote titled What's The Point Of Fiction? My full blog is available here.`;
+
+let shortQuote7 = `How much there is to be gained from looking at bad art`;
+
+let midQuote7 = `Now, part of me suffers from a deep-seated fear that reading novels from an analytical perspective would kill the magic for me,
+and I might lose some of my passion for novels overall (more about this in a future post). But in any case, all this experience with film-criticism
+made me realize how much there is to be gained from looking at bad art, that in fact one can learn more about the craft from bad art than from good art.`;
+
+let longQuote7 = `Like most people, I have a very different relationship with movies than I do with books. I’ve seen many, many movies, in just about every genre and at all
+levels of quality. I can easily identify a good from a bad movie, and can point to specific reasons why I think a movie is good or bad. 
+
+Furthermore, one of my favorite forms of entertainment in recent years has been the Youtube phenomenon of excessively brutal film criticism. These kinds of
+video essays have become increasingly common in the last five years or so, and in fact I spend more time watching those videos than actual films nowadays.
+
+One reason these videos are so popular is because they play off of an experience that pretty much any film-goer can relate to: spending the time and money
+to see a movie, only to discover that you basically paid for trash. It can be pretty irritating to go out of your way to consume poorly planned and executed
+art (if you can even call some of it art), which does nothing to inspire or enrich your life in any way.
+
+That’s why it’s so satisfying to watch someone tear these movies apart, in particular those colossal Hollywood dumpster-fires that by all rights should have
+at least some merit to them, yet manage not to. In my opinion, sharing in this kind of Schadenfreudal hilarity is one of the few ways to squeeze some societal
+value out of the bloated monstrosity that is the film industry.
+
+Beyond that, I realized after a while that by watching so many of these videos, I had learned a lot about the art of film-making, and about the film industry
+in general, so much so that it actually reignited my interest in watching films, which had been waning over the years. I feel like I can appreciate a great film
+better than I could before, and I can enjoy bad films too, by trying to analyze exactly what makes them bad.
+
+Now, part of me suffers from a deep-seated fear that reading novels from an analytical perspective would kill the magic for me, and I might lose some of my passion
+for novels overall (more about this in a future post). But in any case, all this experience with film-criticism made me realize how much there is to be gained from
+looking at bad art, that in fact one can learn more about the craft from bad art than from good art.
+
+
+And thus, I finally realized that I hadn’t ever read a truly bad book. I’ve read books that didn’t impress me so much, and I’ve quit quite a few books that simply
+weren’t my taste, but honestly I’ve hardly ever picked up a book that is generally considered “bad”, either by popular consensus or by critics.
+
+Perhaps the one that comes closest is The Da Vinci Code. The author, Dan Brown, is oft cited by critics as one of the worst prose-writers in modern fiction. But
+even so he is generally considered a good story-teller, and The Da Vinci Code was his most well-received by general audiences. I, personally, enjoyed the story quite
+a bit, and I was only fourteen at the time so I didn’t have much sense for prose, and that aspect of the book didn’t really affect my opinion.
+
+As I’ve stated before, I am an exceptionally slow reader, and because of that I choose my books carefully. I mostly read classics, and I don’t hesitate to drop a book
+if I have a hard time getting into it. So my exposure to trashy novels has been extremely limited. Until recently I thought of this as a strength; I figured it meant
+that my selection process was highly effective, and that by reading only great books it would make me a better writer.
+
+Well, like I said, I’ve realized that this is not how art works. The bad is just as informative as the good, if not more so. And beyond that, my selection habits have
+probably skewed my perspective, so that I have a hard time appreciating very good books that aren’t quite great, and have no real sense of what an actual “bad” book
+even is.
+
+I mentioned in a previous post that A Storm of Swords (A Song of Ice and Fire book 4) is possibly the worst book I have read, but it’s clear to me now that that is a
+totally unfair judgement. It’s true that the prose is quite repetitive, and the story rather bloated, but by almost every other metric it is a very impressive novel.
+The characters are deep and complex, the story is unpredictable and full of nuance, the world-building is excellent…
+
+It’s just that my standards are all wonky from reading pretty much nothing but universally-lauded classics. And it’s frustrating because there are so many truly great
+books out there that one could spend an entire lifetime reading and still barely put a dent in that list. It was for precisely this reason that I chose to focus on
+classics, years ago, when I started exploring the overstuffed bookshelves in my parents’ house.
+
+But by insulating myself from the books of ill-repute, or simply those of less renown, I have also insulated myself from some forms of artistic progress. As Zen teaches
+us, the bad is just as important as the good, they are two sides to the same coin, and an imbalance between the two is ultimately always unhealthy.
+`;
+let aboutQuote7 = `This is an excerpt of a blog post I wrote titled What's The Point Of Fiction? My full blog is available here.`;
 
 let authorBlurb = `Gibson Berglund is a poet and aspiring novelist.
 Originally from Minneapolis, MN, much of his writing is based on his experiences
 living and working in China and South America, most recently as an ESL teacher in Chile.
-He has been a regular contributor at spoken word clubs in Minnesota, Colorado, and in Shanghai. `
+He has been a regular contributor at spoken word clubs in Minnesota, Colorado, and in Shanghai. `;
 
 //main quote display variable
 let mainQuoteDisplay = document.querySelector('#mainquotedisplay');
+
+let centerPrompt = document.querySelector('#centerprompt');
+let aboutAuthorBtn = document.querySelector('#aboutauthorbtn');
 
 //Author page
 let authorCard = document.querySelector('#authorcard'); 
 let authorPage = document.querySelector('#authorpage');
 let profilePic = document.querySelector('#profilepic');
+let contactBtn = document.querySelector('#contactbtn');
+let webDevLink = document.querySelector('#webdevlink');
+
+function aboutAuthor() {
+  centerPrompt.style.display = 'None';
+  aboutAuthorBtn.setAttribute('class', 'hidden');
+  authorPage.setAttribute('class', 'authorpage');
+  authorCard.setAttribute('class', 'authorcard');
+  profilePic.setAttribute('class', 'profilepic');
+  contactBtn.setAttribute('class', 'button');
+  webDevLink.setAttribute('style', 'display: flex');
+  authorCard.textContent = authorBlurb;
+  quote4Card.setAttribute('style', 'margin-top: 50%');
+  quote5Card.setAttribute('style', 'margin-top: 50%');
+};
+
+aboutAuthorBtn.addEventListener('click', function() {
+  closeAnyOpen();
+  aboutAuthor();
+});
+
 
 //QUOTECARD 1
 //set variables
@@ -617,16 +704,27 @@ let modalContent1 = document.querySelector('#modalcontent1');
 let quote1Button = document.querySelector('#quote1button');
 let quote1Card = document.querySelector('#quote1card');
 let aboutButton1 = document.querySelector('#aboutbutton1');
-let aboutAuthor1 = document.querySelector('#aboutauthor1');
 
 //listens for click on one of the quote cards
-quote1.addEventListener('click', function() {
+quote1Card.addEventListener('click', function() {
 //changes size and content when clicked
+    closeAnyOpen();
     quote1.textContent = midQuote1;
     quote1Button.setAttribute('class', 'button');
     aboutButton1.setAttribute('class', 'button');
     quote1Card.setAttribute('style', 'max-width: 550px');
 });
+
+if (quote1.textContent === midQuote1) {
+  window.onclick = function(event) {
+    if (event.target == quote1Card) {
+      quote1Button.setAttribute('class', 'hidden');
+      aboutButton1.setAttribute('class', 'hidden');
+      quote1.textContent = "She pulls me through the door and throws her arms around me";
+    }
+  };
+};
+
 
 //listens for click on 'keep reading' button
 quote1Button.addEventListener('click', function() {
@@ -638,17 +736,13 @@ quote1Button.addEventListener('click', function() {
     modalContent1.textContent = longQuote1;
   //reverts quote card to original state
     quote1.textContent = "She pulls me through the door and throws her arms around me";
-    quote1Card.setAttribute('style', 'max-width: 150px');
+    quote1Card.setAttribute('style', 'max-width: 250px');
+    window.onclick = function(event) {
+      if (event.target == modal1) {
+        modal1.style.display = "none";
+      }
+    }
 });
-
-//button to close modal
-var span = document.getElementById("close1");
-
-span.onclick = function() {
-    modal1.style.display = "none";
-
-  }
-
 
 aboutButton1.addEventListener('click', function() {
   //hides buttons
@@ -658,23 +752,8 @@ aboutButton1.addEventListener('click', function() {
 
   //displays 'about' content inside of quote card
   quote1.textContent = aboutQuote1;
-  aboutAuthor1.setAttribute('class', 'authorbutton');
-  console.log('hello');
+  aboutAuthorBtn.setAttribute('class', 'authorbutton');
 });
-
-aboutAuthor1.addEventListener('click', function() {
-  quote1Card.setAttribute('class', 'hidden');
-  quote2Card.setAttribute('class', 'hidden');
-  quote3Card.setAttribute('class', 'hidden');
-  quote4Card.setAttribute('class', 'hidden');
-  quote5Card.setAttribute('class', 'hidden');
-  authorPage.setAttribute('class', 'authorpage');
-  authorCard.setAttribute('class', 'authorcard');
-  profilePic.setAttribute('class', 'profilepic');
-  authorCard.textContent = authorBlurb;
-  
-})
-
 
 //QUOTECARD 2
 let quote2 = document.querySelector('#quote2');
@@ -684,8 +763,9 @@ let quote2Button = document.querySelector('#quote2button');
 let quote2Card = document.querySelector('#quote2card');
 let aboutButton2 = document.querySelector('#aboutbutton2');
 
-  quote2.addEventListener('click', function() {
-    console.log("are you there");
+  quote2Card.addEventListener('click', function() {
+    console.log('anything happening?');
+    closeAnyOpen();
     quote2.textContent = midQuote2
     quote2Button.setAttribute('class', 'button');
     aboutButton2.setAttribute('class', 'button');
@@ -698,39 +778,25 @@ quote2Button.addEventListener('click', function() {
     modal2.style.display = "flex";
     modalContent2.textContent = longQuote2;
     quote2.textContent = "the Earth a broken mirror reflecting a broken sky";
-    quote2Card.setAttribute('style', 'max-width: 150px');
+    quote2Card.setAttribute('style', 'max-width: 250px');
+    window.onclick = function(event) {
+      if (event.target == modal2) {
+        modal2.style.display = "none";
+      }
+    }
 });
 
-var span = document.getElementsByClassName("close2")[0]
-
-span.onclick = function() {
-    modal2.style.display = "none";
-  }
-
-  aboutButton1.addEventListener('click', function() {
+  aboutButton2.addEventListener('click', function() {
     //hides buttons
-      quote1Button.setAttribute('class', 'hidden');
-      aboutButton1.setAttribute('class', 'hidden');
-      quote1Card.setAttribute('style', 'max-width: 400px');
+      quote2Button.setAttribute('class', 'hidden');
+      aboutButton2.setAttribute('class', 'hidden');
+      quote2Card.setAttribute('style', 'max-width: 400px');
   
     //displays 'about' content inside of quote card
-    quote1.textContent = aboutQuote1;
-    aboutAuthor1.setAttribute('class', 'authorbutton');
-    console.log('hello');
+    quote2.textContent = aboutQuote2;
+    aboutAuthorBtn.setAttribute('class', 'authorbutton');
   });
   
-  aboutAuthor1.addEventListener('click', function() {
-    quote1Card.setAttribute('class', 'hidden');
-    quote2Card.setAttribute('class', 'hidden');
-    quote3Card.setAttribute('class', 'hidden');
-    quote4Card.setAttribute('class', 'hidden');
-    quote5Card.setAttribute('class', 'hidden');
-    authorPage.setAttribute('class', 'authorpage');
-    authorCard.setAttribute('class', 'authorcard');
-    profilePic.setAttribute('class', 'profilepic');
-    authorCard.textContent = authorBlurb;
-    
-  })
 //QUOTECARD 3
 let quote3 = document.querySelector('#quote3');
 let modal3 = document.querySelector('#modal3');
@@ -739,7 +805,8 @@ let quote3Button = document.querySelector('#quote3button');
 let quote3Card = document.querySelector('#quote3card');
 let aboutButton3 = document.querySelector('#aboutbutton3');
 
-  quote3.addEventListener('click', function() {
+  quote3Card.addEventListener('click', function() {
+    closeAnyOpen();
     quote3.textContent = midQuote3
     quote3Button.setAttribute('class', 'button');
     aboutButton1.setAttribute('class', 'button');
@@ -769,7 +836,8 @@ let quote4Button = document.querySelector('#quote4button');
 let quote4Card = document.querySelector('#quote4card');
 let aboutButton4 = document.querySelector('#aboutbutton4');
 
-  quote4.addEventListener('click', function() {
+  quote4Card.addEventListener('click', function() {
+    closeAnyOpen();
     quote4.textContent = midQuote4
     quote4Button.setAttribute('class', 'button');
     aboutButton4.setAttribute('class', 'button');
@@ -801,7 +869,8 @@ let aboutButton5 = document.querySelector('#aboutbutton5');
 
 quote5.textContent = shortQuote5;
 
-  quote5.addEventListener('click', function() {
+  quote5Card.addEventListener('click', function() {
+    closeAnyOpen();
     quote5.textContent = midQuote5;
     quote5Button.setAttribute('class', 'button');
     aboutButton1.setAttribute('class', 'button');
@@ -835,8 +904,9 @@ let aboutAuthor6 = document.querySelector('#aboutauthor6');
 quote6.textContent = shortQuote6;
 
 //listens for click on one of the quote cards
-quote6.addEventListener('click', function() {
+quote6Card.addEventListener('click', function() {
 //changes size and content when clicked
+    closeAnyOpen();
     quote6.textContent = midQuote6;
     quote6Button.setAttribute('class', 'button');
     aboutButton6.setAttribute('class', 'button');
@@ -887,6 +957,73 @@ aboutAuthor6.addEventListener('click', function() {
   profilePic.setAttribute('class', 'profilepic');
   authorCard.textContent = authorBlurb;
   
+});
+
+
+//QUOTECARD 7
+//set variables
+let quote7 = document.querySelector('#quote7');
+let modal7 = document.querySelector('#modal7');
+let modalContent7 = document.querySelector('#modalcontent7');
+let quote7Button = document.querySelector('#quote7button');
+let quote7Card = document.querySelector('#quote7card');
+let aboutButton7 = document.querySelector('#aboutbutton7');
+let aboutAuthor7 = document.querySelector('#aboutauthor7');
+
+//quote7.textContent = shortQuote7;
+
+//listens for click on one of the quote cards
+quote7Card.addEventListener('click', function() {
+//changes size and content when clicked
+    closeAnyOpen();
+    quote7.textContent = midQuote7;
+    quote7Button.setAttribute('class', 'button');
+    aboutButton7.setAttribute('class', 'button');
+    quote7Card.setAttribute('style', 'max-width: 550px');
+});
+
+if (quote7.textContent === midQuote7) {
+  window.onclick = function(event) {
+    if (event.target == quote7Card) {
+      quote7Button.setAttribute('class', 'hidden');
+      aboutButton7.setAttribute('class', 'hidden');
+      quote7.textContent = shortQuote7;
+    }
+  };
+};
+
+
+//listens for click on 'keep reading' button
+quote7Button.addEventListener('click', function() {
+  //hides buttons
+    quote7Button.setAttribute('class', 'hidden');
+    aboutButton7.setAttribute('class', 'hidden');
+  //displays modal with quote content
+    modal7.style.display = "flex";
+    modalContent7.textContent = longQuote7;
+  //reverts quote card to original state
+    quote7.textContent = shortQuote7;
+    quote7Card.setAttribute('style', 'max-width: 250px');
+    window.onclick = function(event) {
+      if (event.target == modal7) {
+        modal7.style.display = "none";
+      }
+    }
+});
+
+aboutButton7.addEventListener('click', function() {
+  //hides buttons
+    quote7Button.setAttribute('class', 'hidden');
+    aboutButton7.setAttribute('class', 'hidden');
+    quote7Card.setAttribute('style', 'max-width: 400px');
+
+  //displays 'about' content inside of quote card
+  quote7.textContent = aboutQuote7;
+  aboutAuthor7.setAttribute('class', 'authorbutton');
+});
+
+aboutAuthor7.addEventListener('click', function() {
+  aboutAuthor();
 })
 
 
@@ -895,3 +1032,24 @@ aboutAuthor6.addEventListener('click', function() {
 // $('.shufflepuzzle').sortable({
 //   grid: [1, 4]
 // });
+
+
+function closeAnyOpen() {
+  let quotes = [quote1, quote2, quote3, quote4, quote5, quote6];
+  let midQuotes = [midQuote1, midQuote2, midQuote3, midQuote4, midQuote5, midQuote6, midQuote7];
+  let shortQuotes = [shortQuote1, shortQuote2, shortQuote3, shortQuote4, shortQuote5, shortQuote6, shortQuote7];
+  let quoteButtons = [quote1Button, quote2Button, quote3Button, quote4Button, quote5Button, quote6Button];
+  let aboutButtons = [aboutButton1, aboutButton2, aboutButton3, aboutButton4, aboutButton5, aboutButton6];
+  let aboutQuotes = [aboutQuote1, aboutQuote2, aboutQuote3, aboutQuote4, aboutQuote5, aboutQuote6, aboutQuote7];
+  for(var i=0; i < quotes.length; i++) {
+    if (quotes[i].textContent === midQuotes[i]) {
+      quotes[i].textContent = shortQuotes[i];
+      quoteButtons[i].setAttribute('class', 'hidden');
+      aboutButtons[i].setAttribute('class', 'hidden');
+    } else if (quotes[i].textContent === aboutQuotes[i]) {
+      quotes[i].textContent = shortQuotes[i];
+      quoteButtons[i].setAttribute('class', 'hidden');
+      aboutButtons[i].setAttribute('class', 'hidden');
+    }
+  }
+};
