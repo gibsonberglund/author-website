@@ -86,7 +86,9 @@
 
 .quote {
   margin: 5%;
+  transition: 2s;
 }
+
 
 .buttons {
   display: flex;
@@ -100,17 +102,20 @@
     max-width: 250px;
     padding: 20px;
     margin: 3px;
-    background-color: rgb(206, 206, 206);
+   /* background-color: rgb(206, 206, 206);*/
     border: hidden;
     border-radius: 70% / 65%;
     box-shadow: 5px 5px 3px rgb(34, 34, 34);
+    color: rgba(255, 255, 255, 0);
     font-family: 'Times New Roman', Times, serif;
     transition: 2s;
+    background-image: url("./images/author-profile-pic.jpg");
 }
 
+
+
 .quotecard:hover {
-  background-color: rgb(144, 76, 76);
-  cursor: pointer;
+  color: black;
 }
 
 .modal {
@@ -216,3 +221,4 @@
   background-color: white;
   border-radius: 3px;
 }
+

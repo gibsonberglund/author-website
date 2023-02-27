@@ -228,8 +228,7 @@ can’t tell her the truth, but one day I hope to.
 “I’m alive, aren’t I?”
 She hums with laughter, “I’m glad you are.”`;
 
-let aboutQuote2 = `This is an exerpt from the beginning of Part 2 of a heretofore unpublished novel called Alley Cats And Aliens.
-The novel is a surreal, stream-of-consciousness ombudsroman that follows the foibles of Dylan Montravine,
+let aboutQuote2 = `This is an exerpt from Alley Cats And Aliens, a surreal, stream-of-consciousness ombudsroman that follows the foibles of Dylan Montravine,
 an inept American English teacher living in Shanghai.`;
 
 //Quote 3
@@ -659,10 +658,8 @@ us, the bad is just as important as the good, they are two sides to the same coi
 `;
 let aboutQuote7 = `This is an excerpt of a blog post I wrote titled What's The Point Of Fiction? My full blog is available here.`;
 
-let authorBlurb = `Gibson Berglund is a poet and aspiring novelist.
-Originally from Minneapolis, MN, much of his writing is based on his experiences
-living and working in China and South America, most recently as an ESL teacher in Chile.
-He has been a regular contributor at spoken word clubs in Minnesota, Colorado, and in Shanghai. `;
+let authorBlurb = `Gibson Berglund is a full-stack web developer by day, an aspiring novelist by night. If you have any preofessional interst in my web dev skills, you can 
+view my portfolio here on github, or use the contact form below. If you have an interes in my writing, you can view my full blog here. All professional inquiries welcome.`;
 
 //main quote display variable
 let mainQuoteDisplay = document.querySelector('#mainquotedisplay');
@@ -671,7 +668,7 @@ let centerPrompt = document.querySelector('#centerprompt');
 let aboutAuthorBtn = document.querySelector('#aboutauthorbtn');
 
 //Author page
-let authorCard = document.querySelector('#authorcard'); 
+let authorInfo = document.querySelector('#authorinfo'); 
 let authorPage = document.querySelector('#authorpage');
 let profilePic = document.querySelector('#profilepic');
 let contactBtn = document.querySelector('#contactbtn');
@@ -681,11 +678,11 @@ function aboutAuthor() {
   centerPrompt.style.display = 'None';
   aboutAuthorBtn.setAttribute('class', 'hidden');
   authorPage.setAttribute('class', 'authorpage');
-  authorCard.setAttribute('class', 'authorcard');
+  authorInfo.setAttribute('class', 'authorcard');
   profilePic.setAttribute('class', 'profilepic');
   contactBtn.setAttribute('class', 'button');
   webDevLink.setAttribute('style', 'display: flex');
-  authorCard.textContent = authorBlurb;
+  authorInfo.textContent = authorBlurb;
   quote4Card.setAttribute('style', 'margin-top: 50%');
   quote5Card.setAttribute('style', 'margin-top: 50%');
 };
@@ -705,9 +702,18 @@ let quote1Button = document.querySelector('#quote1button');
 let quote1Card = document.querySelector('#quote1card');
 let aboutButton1 = document.querySelector('#aboutbutton1');
 
+
+// quote1Card.addEventListener('mouseover', function(event) {
+//   event.preventDefault();
+//   deBubble();
+quote1.textContent = shortQuote1;
+//   }
+// );
+
 //listens for click on one of the quote cards
-quote1Card.addEventListener('click', function() {
+quote1Card.addEventListener('click', function(event) {
 //changes size and content when clicked
+    event.preventDefault();
     closeAnyOpen();
     quote1.textContent = midQuote1;
     quote1Button.setAttribute('class', 'button');
@@ -720,7 +726,7 @@ if (quote1.textContent === midQuote1) {
     if (event.target == quote1Card) {
       quote1Button.setAttribute('class', 'hidden');
       aboutButton1.setAttribute('class', 'hidden');
-      quote1.textContent = "She pulls me through the door and throws her arms around me";
+      quote1.textContent = shortQuote1;
     }
   };
 };
@@ -749,6 +755,7 @@ aboutButton1.addEventListener('click', function() {
     quote1Button.setAttribute('class', 'hidden');
     aboutButton1.setAttribute('class', 'hidden');
     quote1Card.setAttribute('style', 'max-width: 400px');
+    quote1.setAttribute('style', 'color: black');
 
   //displays 'about' content inside of quote card
   quote1.textContent = aboutQuote1;
@@ -762,6 +769,9 @@ let modalContent2 = document.querySelector('#modalcontent2');
 let quote2Button = document.querySelector('#quote2button');
 let quote2Card = document.querySelector('#quote2card');
 let aboutButton2 = document.querySelector('#aboutbutton2');
+
+quote2.textContent = shortQuote2;
+
 
   quote2Card.addEventListener('click', function() {
     console.log('anything happening?');
@@ -805,6 +815,9 @@ let quote3Button = document.querySelector('#quote3button');
 let quote3Card = document.querySelector('#quote3card');
 let aboutButton3 = document.querySelector('#aboutbutton3');
 
+quote3.textContent = shortQuote3;
+
+
   quote3Card.addEventListener('click', function() {
     closeAnyOpen();
     quote3.textContent = midQuote3
@@ -835,6 +848,8 @@ let modalContent4 = document.querySelector('#modalcontent4');
 let quote4Button = document.querySelector('#quote4button');
 let quote4Card = document.querySelector('#quote4card');
 let aboutButton4 = document.querySelector('#aboutbutton4');
+
+quote4.textContent = shortQuote4;
 
   quote4Card.addEventListener('click', function() {
     closeAnyOpen();
@@ -970,7 +985,8 @@ let quote7Card = document.querySelector('#quote7card');
 let aboutButton7 = document.querySelector('#aboutbutton7');
 let aboutAuthor7 = document.querySelector('#aboutauthor7');
 
-//quote7.textContent = shortQuote7;
+
+quote7.textContent = shortQuote7;
 
 //listens for click on one of the quote cards
 quote7Card.addEventListener('click', function() {
@@ -1050,6 +1066,14 @@ function closeAnyOpen() {
       quotes[i].textContent = shortQuotes[i];
       quoteButtons[i].setAttribute('class', 'hidden');
       aboutButtons[i].setAttribute('class', 'hidden');
-    }
+      quotes[i].setAttribute('style', 'color: inherit');
+    };
   }
 };
+
+// function deBubble() {
+//   let quotes = [quote1, quote2, quote3, quote4, quote5, quote6];
+//   for(var i=0; i < quotes.length; i++) {
+//     quotes[i].textContent = "";
+//   }
+// };
