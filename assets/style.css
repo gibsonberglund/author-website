@@ -29,13 +29,19 @@
 }
 
 #centerprompt {
-  padding-top: 16%;
+  padding-top: 2%;
+  padding-right: 5%;
   font-size: 36px;
+  position: absolute;
+  margin-left: -7%;
+  z-index: -1;
 }
 
+/*
 #quote1card {
   justify-content: center;
 }
+*/
 
 #quote2card {
   margin-left: 5%;
@@ -162,30 +168,21 @@
 }
 
 .button {
-  display: inline-block;
+  display: flex;
   width: 100px;
-  height: 25px;
-  background-color: rgb(64, 64, 155);
+  height: 100px;
+  border-radius: 50% / 50%;
+  background-color: rgb(249, 2, 154);
   color: white;
   font-size: 16px;
   text-align: center;
-  margin: 10px;
-  margin-top: -45px;
+  align-items: center;
+  margin: 50%;
 }
 
 .button:hover {
   color: rgb(144, 76, 76);
   background-color: rgb(106, 106, 143);
-}
-
-.authorbutton {
-  display: inline-block;
-  width: 150px;
-  height: 25px;
-  background-color: rgb(64, 64, 155);
-  color: white;
-  font-size: 16px;
-  text-align: center;
 }
 
 .authorbutton:hover {
@@ -194,8 +191,9 @@
 }
 
 #authorpage {
-  display: grid;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .profilepic{

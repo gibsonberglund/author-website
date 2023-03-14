@@ -658,8 +658,111 @@ us, the bad is just as important as the good, they are two sides to the same coi
 `;
 let aboutQuote7 = `This is an excerpt of a blog post I wrote titled What's The Point Of Fiction? My full blog is available here.`;
 
+let shortQuote8 = `Grapes grown in a vineyard for sinners`;
+
+let midQuote8 = `Grapes grown in a vineyard for sinners,
+Barefoot stomped and peeled by the man-skinner.
+Frost killed them off,
+Frozen ground won’t grow nothing now;
+Coldness embitters and we need a release,
+An expression at least,
+But there ain’t enough words for winter.`;
+
+let longQuote8 = `Winter Wine
+
+Grapes grown in a vineyard for sinners,
+Barefoot stomped and peeled by the man-skinner.
+Frost killed them off,
+Frozen ground won’t grow nothing now;
+Coldness embitters and we need a release,
+An expression at least,
+But there ain’t enough words for winter.
+
+Snow falling thicker over glades and groves,
+Lakes and rivers, bridges and roads,
+Hiding the thistles and witch-hazel thickets,
+Poison berries buried by windblown drifts.
+But pristine fields darken at the edges,
+Turning dirty like pigeons,
+Except for maybe one in a million.
+One impossibly brilliant,
+And beautifully resilient.
+A dove,
+Lonely as a lost glove,
+Like the one I shot and then felt filthy
+Covered in her blood.
+A spray of vermillion on the virgin-white snow-blanket,
+That splash of hatred like footprints quickly fading
+In the constant precipitation.
+
+Entailed tales twisted entwined,
+Tongue tied I tripped on a knot and
+Lost a lot in a
+Moment, um...
+Momentum
+Is hard to recover
+Against the bluster,
+And who can you trust here in this clusterfuck
+Where even the big trucks get stuck and
+Ain’t no one got luck enough
+Even to crush those frustrating little ideas
+That suck away your strength by filling you with angst,
+Anger and hate that has no sense, no core, no crux?
+
+Migraine threatens,
+My greatest fear beckons,
+And I reckon it’ll take a second mention
+Of these filthy pigeons before it sinks in.
+I stink of gin and I’m getting fat,
+Yet in fact I’m still too thin to drink like this without a deathwish.
+My bandwidth is crippled and my patience is failing
+So I’m cutting the wires to get rock-bottom fidelity;
+Crawling in the ditch to stay off the grid.
+
+Can’t harmonize ‘cause I’m singing off-pitch,
+Running with a stitch ‘cause I’m dehydrated
+And the pain is sublime,
+Though I can’t say it’s harmless.
+Eyes red as fire,
+Drinking blood off the vine,
+Blinded by the sun but I keep on running
+Because struggling can be fun
+And suffering is nothing
+So long as I’ve got that special feeling,
+You know the one I mean?
+I’ll keep singing ‘til I fix my pitch,
+And I’ll keep running ‘til I can dive in and swim.
+I’m a bastion of action,
+A blast-fire of passion,
+A lucky son of a bastard
+Who was saved by compassion,
+By inspiration so profound and sensuous,
+So unbelievably generous,
+Yet so simple it was simply precious:
+
+Love,
+A match for that one glove,
+A one in a million dove.
+It’s enough to calm the beast in me at least,
+And I believe that all I need
+Is a little more time in the sunshine,
+A swim in the lake,
+Water on my body and wind in my face,
+Then my heart will ache and
+My spirit will wake
+And I won’t need no more of this
+Winter wine.
+`;
+
+let aboutQuote8 = `This poem is titled Winter Wine, it is one of the central pieces in my chapbook collection, Howls Of A Sundog.`;
+
 let authorBlurb = `Gibson Berglund is a full-stack web developer by day, an aspiring novelist by night. If you have any preofessional interst in my web dev skills, you can 
 view my portfolio here on github, or use the contact form below. If you have an interes in my writing, you can view my full blog here. All professional inquiries welcome.`;
+
+// HOW TO REFACTOR
+
+// create a 'for' loop for every function you want to run on a quotecard
+// i.e. reverting to the starting quoteCard can be a function that runs just like CloseAnyOpen
 
 //main quote display variable
 let mainQuoteDisplay = document.querySelector('#mainquotedisplay');
@@ -675,14 +778,16 @@ let contactBtn = document.querySelector('#contactbtn');
 let webDevLink = document.querySelector('#webdevlink');
 
 function aboutAuthor() {
-  centerPrompt.style.display = 'None';
+  quote1.textContent = authorBlurb;
+  quote1.setAttribute('style', 'color: black');
+  quote1Card.setAttribute('style', 'max-height: 250px', 'width: 500px');
   aboutAuthorBtn.setAttribute('class', 'hidden');
   authorPage.setAttribute('class', 'authorpage');
-  authorInfo.setAttribute('class', 'authorcard');
+  //authorInfo.setAttribute('class', 'authorcard');
   profilePic.setAttribute('class', 'profilepic');
   contactBtn.setAttribute('class', 'button');
   webDevLink.setAttribute('style', 'display: flex');
-  authorInfo.textContent = authorBlurb;
+  //authorInfo.textContent = authorBlurb;
   quote4Card.setAttribute('style', 'margin-top: 50%');
   quote5Card.setAttribute('style', 'margin-top: 50%');
 };
@@ -715,24 +820,26 @@ quote1Card.addEventListener('click', function(event) {
 //changes size and content when clicked
     event.preventDefault();
     closeAnyOpen();
+    centerPrompt.setAttribute('class', 'hidden');
     quote1.textContent = midQuote1;
     quote1Button.setAttribute('class', 'button');
     aboutButton1.setAttribute('class', 'button');
     quote1Card.setAttribute('style', 'max-width: 550px');
+    quote1.setAttribute('style', 'color: black');
 });
 
-if (quote1.textContent === midQuote1) {
-  window.onclick = function(event) {
-    if (event.target == quote1Card) {
-      quote1Button.setAttribute('class', 'hidden');
-      aboutButton1.setAttribute('class', 'hidden');
-      quote1.textContent = shortQuote1;
-    }
-  };
-};
+// if (quote1.textContent === midQuote1) {
+//   window.onclick = function(event) {
+//     if (event.target == quote1Card) {
+//       quote1Button.setAttribute('class', 'hidden');
+//       aboutButton1.setAttribute('class', 'hidden');
+//       quote1.textContent = shortQuote1;
+//     }
+//   };
+// };
 
 
-//listens for click on 'keep reading' button
+//listens on 'Keep Reading' button
 quote1Button.addEventListener('click', function() {
   //hides buttons
     quote1Button.setAttribute('class', 'hidden');
@@ -741,11 +848,13 @@ quote1Button.addEventListener('click', function() {
     modal1.style.display = "flex";
     modalContent1.textContent = longQuote1;
   //reverts quote card to original state
-    quote1.textContent = "She pulls me through the door and throws her arms around me";
+    quote1.textContent = shortQuote1;
+    quote1.setAttribute('style', 'color: inherit');
     quote1Card.setAttribute('style', 'max-width: 250px');
     window.onclick = function(event) {
       if (event.target == modal1) {
         modal1.style.display = "none";
+        centerPrompt.setAttribute('class', 'inherit');
       }
     }
 });
@@ -755,11 +864,10 @@ aboutButton1.addEventListener('click', function() {
     quote1Button.setAttribute('class', 'hidden');
     aboutButton1.setAttribute('class', 'hidden');
     quote1Card.setAttribute('style', 'max-width: 400px');
-    quote1.setAttribute('style', 'color: black');
 
   //displays 'about' content inside of quote card
   quote1.textContent = aboutQuote1;
-  aboutAuthorBtn.setAttribute('class', 'authorbutton');
+  aboutAuthorBtn.setAttribute('class', 'button');
 });
 
 //QUOTECARD 2
@@ -774,8 +882,8 @@ quote2.textContent = shortQuote2;
 
 
   quote2Card.addEventListener('click', function() {
-    console.log('anything happening?');
     closeAnyOpen();
+    centerPrompt.setAttribute('class', 'hidden');
     quote2.textContent = midQuote2
     quote2Button.setAttribute('class', 'button');
     aboutButton2.setAttribute('class', 'button');
@@ -792,6 +900,7 @@ quote2Button.addEventListener('click', function() {
     window.onclick = function(event) {
       if (event.target == modal2) {
         modal2.style.display = "none";
+        centerPrompt.setAttribute('class', 'inherit');
       }
     }
 });
@@ -801,10 +910,11 @@ quote2Button.addEventListener('click', function() {
       quote2Button.setAttribute('class', 'hidden');
       aboutButton2.setAttribute('class', 'hidden');
       quote2Card.setAttribute('style', 'max-width: 400px');
+      quote2.setAttribute('style', 'color: black');
   
     //displays 'about' content inside of quote card
     quote2.textContent = aboutQuote2;
-    aboutAuthorBtn.setAttribute('class', 'authorbutton');
+    aboutAuthorBtn.setAttribute('class', 'button');
   });
   
 //QUOTECARD 3
@@ -820,9 +930,10 @@ quote3.textContent = shortQuote3;
 
   quote3Card.addEventListener('click', function() {
     closeAnyOpen();
+    centerPrompt.setAttribute('class', 'hidden');
     quote3.textContent = midQuote3
     quote3Button.setAttribute('class', 'button');
-    aboutButton1.setAttribute('class', 'button');
+    aboutButton3.setAttribute('class', 'button');
     quote3Card.setAttribute('style', 'max-width: 450px');
 });
 
@@ -833,13 +944,26 @@ quote3Button.addEventListener('click', function() {
     modalContent3.textContent = longQuote3;
     quote3.textContent = "I woke not from sleep but only a heavy doze";
     quote3Card.setAttribute('style', 'max-width: 150px');
+    window.onclick = function(event) {
+      if (event.target == modal3) {
+        modal3.style.display = "none";
+        centerPrompt.setAttribute('class', 'inherit');
+      }
+    }
 });
 
-var span = document.getElementsByClassName("close3")[0]
+aboutButton3.addEventListener('click', function() {
+  //hides buttons
+    quote3Button.setAttribute('class', 'hidden');
+    aboutButton3.setAttribute('class', 'hidden');
+    quote3Card.setAttribute('style', 'max-width: 400px');
+    quote3.setAttribute('style', 'color: black');
 
-span.onclick = function() {
-    modal3.style.display = "none";
-  }
+  //displays 'about' content inside of quote card
+  quote3.textContent = aboutQuote3;
+  aboutAuthorBtn.setAttribute('class', 'button');
+});
+
 
 //QUOTECARD 4
 let quote4 = document.querySelector('#quote4');
@@ -853,6 +977,7 @@ quote4.textContent = shortQuote4;
 
   quote4Card.addEventListener('click', function() {
     closeAnyOpen();
+    centerPrompt.setAttribute('class', 'hidden');
     quote4.textContent = midQuote4
     quote4Button.setAttribute('class', 'button');
     aboutButton4.setAttribute('class', 'button');
@@ -866,13 +991,25 @@ quote4Button.addEventListener('click', function() {
     modalContent4.textContent = longQuote4;
     quote4.textContent = "This protest culture I’d come to write about had evolved into a whole new animal";
     quote4Card.setAttribute('style', 'max-width: 150px');
+    window.onclick = function(event) {
+      if (event.target == modal4) {
+        modal4.style.display = "none";
+        centerPrompt.setAttribute('class', 'inherit');
+      }
+    }
 });
 
-var span = document.getElementsByClassName("close4")[0]
+aboutButton4.addEventListener('click', function() {
+  //hides buttons
+    quote4Button.setAttribute('class', 'hidden');
+    aboutButton4.setAttribute('class', 'hidden');
+    quote4Card.setAttribute('style', 'max-width: 400px');
+    quote4.setAttribute('style', 'color: black');
 
-span.onclick = function() {
-    modal4.style.display = "none";
-  }
+  //displays 'about' content inside of quote card
+  quote4.textContent = aboutQuote4;
+  aboutAuthorBtn.setAttribute('class', 'button');
+});
 
 //QUOTECARD 5
 let quote5 = document.querySelector('#quote5');
@@ -886,6 +1023,7 @@ quote5.textContent = shortQuote5;
 
   quote5Card.addEventListener('click', function() {
     closeAnyOpen();
+    centerPrompt.setAttribute('class', 'hidden');
     quote5.textContent = midQuote5;
     quote5Button.setAttribute('class', 'button');
     aboutButton1.setAttribute('class', 'button');
@@ -899,13 +1037,25 @@ quote5Button.addEventListener('click', function() {
     modalContent5.textContent = longQuote5;
     quote5.textContent = shortQuote5;
     quote5Card.setAttribute('style', 'max-width: 150px');
+    window.onclick = function(event) {
+      if (event.target == modal5) {
+        modal5.style.display = "none";
+        centerPrompt.setAttribute('class', 'inherit');
+      }
+    }
 });
 
-var span = document.getElementsByClassName("close5")[0]
+aboutButton5.addEventListener('click', function() {
+  //hides buttons
+    quote5Button.setAttribute('class', 'hidden');
+    aboutButton5.setAttribute('class', 'hidden');
+    quote5Card.setAttribute('style', 'max-width: 400px');
+    quote5.setAttribute('style', 'color: black');
 
-span.onclick = function() {
-    modal5.style.display = "none";
-  }
+  //displays 'about' content inside of quote card
+  quote5.textContent = aboutQuote5;
+  aboutAuthorBtn.setAttribute('class', 'button');
+});
 
 //Quote 6
 let quote6 = document.querySelector('#quote6');
@@ -914,7 +1064,6 @@ let modalContent6 = document.querySelector('#modalcontent6');
 let quote6Button = document.querySelector('#quote6button');
 let quote6Card = document.querySelector('#quote6card');
 let aboutButton6 = document.querySelector('#aboutbutton6');
-let aboutAuthor6 = document.querySelector('#aboutauthor6');
 
 quote6.textContent = shortQuote6;
 
@@ -922,6 +1071,7 @@ quote6.textContent = shortQuote6;
 quote6Card.addEventListener('click', function() {
 //changes size and content when clicked
     closeAnyOpen();
+    centerPrompt.setAttribute('class', 'hidden');
     quote6.textContent = midQuote6;
     quote6Button.setAttribute('class', 'button');
     aboutButton6.setAttribute('class', 'button');
@@ -939,41 +1089,25 @@ quote6Button.addEventListener('click', function() {
   //reverts quote card to original state
     quote6.textContent = shortQuote6;
     quote6Card.setAttribute('style', 'max-width: 150px');
+    window.onclick = function(event) {
+      if (event.target == modal1) {
+        modal1.style.display = "none";
+        centerPrompt.setAttribute('class', 'inherit');
+      }
+    }
 });
-
-//button to close modal
-var span = document.getElementById("close6");
-
-span.onclick = function() {
-    modal6.style.display = "none";
-
-  }
-
 
 aboutButton6.addEventListener('click', function() {
   //hides buttons
     quote6Button.setAttribute('class', 'hidden');
     aboutButton6.setAttribute('class', 'hidden');
     quote6Card.setAttribute('style', 'max-width: 400px');
+    quote6.setAttribute('style', 'color: black');
 
   //displays 'about' content inside of quote card
   quote6.textContent = aboutQuote6;
-  aboutAuthor6.setAttribute('class', 'authorbutton');
+  aboutAuthorBtn.setAttribute('class', 'button');
 });
-
-aboutAuthor6.addEventListener('click', function() {
-  quote1Card.setAttribute('class', 'hidden');
-  quote2Card.setAttribute('class', 'hidden');
-  quote3Card.setAttribute('class', 'hidden');
-  quote4Card.setAttribute('class', 'hidden');
-  quote5Card.setAttribute('class', 'hidden');
-  authorPage.setAttribute('class', 'authorpage');
-  authorCard.setAttribute('class', 'authorcard');
-  profilePic.setAttribute('class', 'profilepic');
-  authorCard.textContent = authorBlurb;
-  
-});
-
 
 //QUOTECARD 7
 //set variables
@@ -983,7 +1117,6 @@ let modalContent7 = document.querySelector('#modalcontent7');
 let quote7Button = document.querySelector('#quote7button');
 let quote7Card = document.querySelector('#quote7card');
 let aboutButton7 = document.querySelector('#aboutbutton7');
-let aboutAuthor7 = document.querySelector('#aboutauthor7');
 
 
 quote7.textContent = shortQuote7;
@@ -992,21 +1125,23 @@ quote7.textContent = shortQuote7;
 quote7Card.addEventListener('click', function() {
 //changes size and content when clicked
     closeAnyOpen();
+    centerPrompt.setAttribute('class', 'hidden');
     quote7.textContent = midQuote7;
     quote7Button.setAttribute('class', 'button');
     aboutButton7.setAttribute('class', 'button');
     quote7Card.setAttribute('style', 'max-width: 550px');
 });
 
-if (quote7.textContent === midQuote7) {
-  window.onclick = function(event) {
-    if (event.target == quote7Card) {
-      quote7Button.setAttribute('class', 'hidden');
-      aboutButton7.setAttribute('class', 'hidden');
-      quote7.textContent = shortQuote7;
-    }
-  };
-};
+
+// if (quote7.textContent === midQuote7) {
+//   window.onclick = function(event) {
+//     if (event.target == quote7Card) {
+//       quote7Button.setAttribute('class', 'hidden');
+//       aboutButton7.setAttribute('class', 'hidden');
+//       quote7.textContent = shortQuote7;
+//     }
+//   };
+// };
 
 
 //listens for click on 'keep reading' button
@@ -1023,6 +1158,7 @@ quote7Button.addEventListener('click', function() {
     window.onclick = function(event) {
       if (event.target == modal7) {
         modal7.style.display = "none";
+        centerPrompt.setAttribute('class', 'inherit');
       }
     }
 });
@@ -1032,16 +1168,66 @@ aboutButton7.addEventListener('click', function() {
     quote7Button.setAttribute('class', 'hidden');
     aboutButton7.setAttribute('class', 'hidden');
     quote7Card.setAttribute('style', 'max-width: 400px');
+    quote7.setAttribute('style', 'color: black');
 
   //displays 'about' content inside of quote card
   quote7.textContent = aboutQuote7;
-  aboutAuthor7.setAttribute('class', 'authorbutton');
+  aboutAuthorBtn.setAttribute('class', 'button');
 });
 
-aboutAuthor7.addEventListener('click', function() {
-  aboutAuthor();
-})
+//QUOTECARD 8
+//set variables
+let quote8 = document.querySelector('#quote8');
+let modal8 = document.querySelector('#modal8');
+let modalContent8 = document.querySelector('#modalcontent8');
+let quote8Button = document.querySelector('#quote8button');
+let quote8Card = document.querySelector('#quote8card');
+let aboutButton8 = document.querySelector('#aboutbutton8');
 
+
+quote8.textContent = shortQuote8;
+
+//listens for click on one of the quote cards
+quote8Card.addEventListener('click', function() {
+//changes size and content when clicked
+    closeAnyOpen();
+    centerPrompt.setAttribute('class', 'hidden');
+    quote8.textContent = midQuote8;
+    quote8Button.setAttribute('class', 'button');
+    aboutButton8.setAttribute('class', 'button');
+    quote8Card.setAttribute('style', 'max-width: 550px');
+});
+
+//listens for click on 'keep reading' button
+quote8Button.addEventListener('click', function() {
+  //hides buttons
+    quote8Button.setAttribute('class', 'hidden');
+    aboutButton8.setAttribute('class', 'hidden');
+  //displays modal with quote content
+    modal8.style.display = "flex";
+    modalContent8.textContent = longQuote8;
+  //reverts quote card to original state
+    quote8.textContent = shortQuote8;
+    quote8Card.setAttribute('style', 'max-width: 250px');
+    window.onclick = function(event) {
+      if (event.target == modal8) {
+        modal8.style.display = "none";
+        centerPrompt.setAttribute('class', 'inherit');
+      }
+    }
+});
+
+aboutButton8.addEventListener('click', function() {
+  //hides buttons
+    quote8Button.setAttribute('class', 'hidden');
+    aboutButton8.setAttribute('class', 'hidden');
+    quote8Card.setAttribute('style', 'max-width: 400px');
+    quote8.setAttribute('style', 'color: black');
+
+  //displays 'about' content inside of quote card
+  quote8.textContent = aboutQuote8;
+  aboutAuthorBtn.setAttribute('class', 'button');
+});
 
 // var shufflePuzzle = document.querySelector('#shufflepuzzle');
 
@@ -1051,22 +1237,30 @@ aboutAuthor7.addEventListener('click', function() {
 
 
 function closeAnyOpen() {
-  let quotes = [quote1, quote2, quote3, quote4, quote5, quote6];
-  let midQuotes = [midQuote1, midQuote2, midQuote3, midQuote4, midQuote5, midQuote6, midQuote7];
-  let shortQuotes = [shortQuote1, shortQuote2, shortQuote3, shortQuote4, shortQuote5, shortQuote6, shortQuote7];
-  let quoteButtons = [quote1Button, quote2Button, quote3Button, quote4Button, quote5Button, quote6Button];
-  let aboutButtons = [aboutButton1, aboutButton2, aboutButton3, aboutButton4, aboutButton5, aboutButton6];
-  let aboutQuotes = [aboutQuote1, aboutQuote2, aboutQuote3, aboutQuote4, aboutQuote5, aboutQuote6, aboutQuote7];
+  let quotes = [quote1, quote2, quote3, quote4, quote5, quote6, quote7, quote8];
+  let midQuotes = [midQuote1, midQuote2, midQuote3, midQuote4, midQuote5, midQuote6, midQuote7, midQuote8];
+  let shortQuotes = [shortQuote1, shortQuote2, shortQuote3, shortQuote4, shortQuote5, shortQuote6, shortQuote7, shortQuote8];
+  let quoteButtons = [quote1Button, quote2Button, quote3Button, quote4Button, quote5Button, quote6Button, quote7Button, quote8Button];
+  let aboutButtons = [aboutButton1, aboutButton2, aboutButton3, aboutButton4, aboutButton5, aboutButton6, aboutButton7, aboutButton8];
+  let aboutQuotes = [aboutQuote1, aboutQuote2, aboutQuote3, aboutQuote4, aboutQuote5, aboutQuote6, aboutQuote7, aboutQuote8];
   for(var i=0; i < quotes.length; i++) {
     if (quotes[i].textContent === midQuotes[i]) {
       quotes[i].textContent = shortQuotes[i];
       quoteButtons[i].setAttribute('class', 'hidden');
       aboutButtons[i].setAttribute('class', 'hidden');
+      quotes[i].setAttribute('style', 'color: inherit');
     } else if (quotes[i].textContent === aboutQuotes[i]) {
       quotes[i].textContent = shortQuotes[i];
       quoteButtons[i].setAttribute('class', 'hidden');
       aboutButtons[i].setAttribute('class', 'hidden');
       quotes[i].setAttribute('style', 'color: inherit');
+    } else if (quotes[i].textContent === authorBlurb) {
+      quotes[i].textContent = shortQuotes[i];
+      quotes[i].setAttribute('style', 'color: inherit');
+      profilePic.setAttribute('class', 'hidden');
+      quoteButtons[i].setAttribute('class', 'hidden');
+      aboutButtons[i].setAttribute('class', 'hidden');
+      contactBtn.setAttribute('class', 'hidden');
     };
   }
 };
