@@ -841,16 +841,7 @@ quote1Card.addEventListener('click', function(event) {
 
 //listens on 'Keep Reading' button
 quote1Button.addEventListener('click', function() {
-  //hides buttons
-    quote1Button.setAttribute('class', 'hidden');
-    aboutButton1.setAttribute('class', 'hidden');
-  //displays modal with quote content
-    modal1.style.display = "flex";
-    modalContent1.textContent = longQuote1;
-  //reverts quote card to original state
-    quote1.textContent = shortQuote1;
-    quote1.setAttribute('style', 'color: inherit');
-    quote1Card.setAttribute('style', 'max-width: 250px');
+    openModal();
     window.onclick = function(event) {
       if (event.target == modal1) {
         modal1.style.display = "none";
@@ -860,14 +851,7 @@ quote1Button.addEventListener('click', function() {
 });
 
 aboutButton1.addEventListener('click', function() {
-  //hides buttons
-    quote1Button.setAttribute('class', 'hidden');
-    aboutButton1.setAttribute('class', 'hidden');
-    quote1Card.setAttribute('style', 'max-width: 400px');
-
-  //displays 'about' content inside of quote card
-  quote1.textContent = aboutQuote1;
-  aboutAuthorBtn.setAttribute('class', 'button');
+  aboutQuote();
 });
 
 //QUOTECARD 2
@@ -891,12 +875,7 @@ quote2.textContent = shortQuote2;
 });
 
 quote2Button.addEventListener('click', function() {
-    quote2Button.setAttribute('class', 'hidden');
-    aboutButton2.setAttribute('class', 'hidden');
-    modal2.style.display = "flex";
-    modalContent2.textContent = longQuote2;
-    quote2.textContent = "the Earth a broken mirror reflecting a broken sky";
-    quote2Card.setAttribute('style', 'max-width: 250px');
+    openModal();
     window.onclick = function(event) {
       if (event.target == modal2) {
         modal2.style.display = "none";
@@ -906,15 +885,7 @@ quote2Button.addEventListener('click', function() {
 });
 
   aboutButton2.addEventListener('click', function() {
-    //hides buttons
-      quote2Button.setAttribute('class', 'hidden');
-      aboutButton2.setAttribute('class', 'hidden');
-      quote2Card.setAttribute('style', 'max-width: 400px');
-      quote2.setAttribute('style', 'color: black');
-  
-    //displays 'about' content inside of quote card
-    quote2.textContent = aboutQuote2;
-    aboutAuthorBtn.setAttribute('class', 'button');
+    aboutQuote();
   });
   
 //QUOTECARD 3
@@ -938,12 +909,7 @@ quote3.textContent = shortQuote3;
 });
 
 quote3Button.addEventListener('click', function() {
-    quote3Button.setAttribute('class', 'hidden');
-    aboutButton3.setAttribute('class', 'hidden');
-    modal3.style.display = "flex";
-    modalContent3.textContent = longQuote3;
-    quote3.textContent = "I woke not from sleep but only a heavy doze";
-    quote3Card.setAttribute('style', 'max-width: 150px');
+    openModal();
     window.onclick = function(event) {
       if (event.target == modal3) {
         modal3.style.display = "none";
@@ -953,15 +919,7 @@ quote3Button.addEventListener('click', function() {
 });
 
 aboutButton3.addEventListener('click', function() {
-  //hides buttons
-    quote3Button.setAttribute('class', 'hidden');
-    aboutButton3.setAttribute('class', 'hidden');
-    quote3Card.setAttribute('style', 'max-width: 400px');
-    quote3.setAttribute('style', 'color: black');
-
-  //displays 'about' content inside of quote card
-  quote3.textContent = aboutQuote3;
-  aboutAuthorBtn.setAttribute('class', 'button');
+  aboutQuote();
 });
 
 
@@ -985,12 +943,7 @@ quote4.textContent = shortQuote4;
 });
 
 quote4Button.addEventListener('click', function() {
-    quote4Button.setAttribute('class', 'hidden');
-    aboutButton4.setAttribute('class', 'hidden');
-    modal4.style.display = "flex";
-    modalContent4.textContent = longQuote4;
-    quote4.textContent = "This protest culture I’d come to write about had evolved into a whole new animal";
-    quote4Card.setAttribute('style', 'max-width: 150px');
+    openModal();
     window.onclick = function(event) {
       if (event.target == modal4) {
         modal4.style.display = "none";
@@ -1000,15 +953,7 @@ quote4Button.addEventListener('click', function() {
 });
 
 aboutButton4.addEventListener('click', function() {
-  //hides buttons
-    quote4Button.setAttribute('class', 'hidden');
-    aboutButton4.setAttribute('class', 'hidden');
-    quote4Card.setAttribute('style', 'max-width: 400px');
-    quote4.setAttribute('style', 'color: black');
-
-  //displays 'about' content inside of quote card
-  quote4.textContent = aboutQuote4;
-  aboutAuthorBtn.setAttribute('class', 'button');
+  aboutQuote();
 });
 
 //QUOTECARD 5
@@ -1031,12 +976,7 @@ quote5.textContent = shortQuote5;
 });
 
 quote5Button.addEventListener('click', function() {
-    quote5Button.setAttribute('class', 'hidden');
-    aboutButton5.setAttribute('class', 'hidden');
-    modal5.style.display = "flex";
-    modalContent5.textContent = longQuote5;
-    quote5.textContent = shortQuote5;
-    quote5Card.setAttribute('style', 'max-width: 150px');
+    openModal();
     window.onclick = function(event) {
       if (event.target == modal5) {
         modal5.style.display = "none";
@@ -1046,15 +986,7 @@ quote5Button.addEventListener('click', function() {
 });
 
 aboutButton5.addEventListener('click', function() {
-  //hides buttons
-    quote5Button.setAttribute('class', 'hidden');
-    aboutButton5.setAttribute('class', 'hidden');
-    quote5Card.setAttribute('style', 'max-width: 400px');
-    quote5.setAttribute('style', 'color: black');
-
-  //displays 'about' content inside of quote card
-  quote5.textContent = aboutQuote5;
-  aboutAuthorBtn.setAttribute('class', 'button');
+  aboutQuote();
 });
 
 //Quote 6
@@ -1080,15 +1012,7 @@ quote6Card.addEventListener('click', function() {
 
 //listens for click on 'keep reading' button
 quote6Button.addEventListener('click', function() {
-  //hides buttons
-    quote6Button.setAttribute('class', 'hidden');
-    aboutButton6.setAttribute('class', 'hidden');
-  //displays modal with quote content
-    modal6.style.display = "flex";
-    modalContent6.textContent = longQuote6;
-  //reverts quote card to original state
-    quote6.textContent = shortQuote6;
-    quote6Card.setAttribute('style', 'max-width: 150px');
+    openModal();
     window.onclick = function(event) {
       if (event.target == modal1) {
         modal1.style.display = "none";
@@ -1098,15 +1022,7 @@ quote6Button.addEventListener('click', function() {
 });
 
 aboutButton6.addEventListener('click', function() {
-  //hides buttons
-    quote6Button.setAttribute('class', 'hidden');
-    aboutButton6.setAttribute('class', 'hidden');
-    quote6Card.setAttribute('style', 'max-width: 400px');
-    quote6.setAttribute('style', 'color: black');
-
-  //displays 'about' content inside of quote card
-  quote6.textContent = aboutQuote6;
-  aboutAuthorBtn.setAttribute('class', 'button');
+  aboutQuote();
 });
 
 //QUOTECARD 7
@@ -1146,15 +1062,7 @@ quote7Card.addEventListener('click', function() {
 
 //listens for click on 'keep reading' button
 quote7Button.addEventListener('click', function() {
-  //hides buttons
-    quote7Button.setAttribute('class', 'hidden');
-    aboutButton7.setAttribute('class', 'hidden');
-  //displays modal with quote content
-    modal7.style.display = "flex";
-    modalContent7.textContent = longQuote7;
-  //reverts quote card to original state
-    quote7.textContent = shortQuote7;
-    quote7Card.setAttribute('style', 'max-width: 250px');
+    openModal();
     window.onclick = function(event) {
       if (event.target == modal7) {
         modal7.style.display = "none";
@@ -1164,15 +1072,7 @@ quote7Button.addEventListener('click', function() {
 });
 
 aboutButton7.addEventListener('click', function() {
-  //hides buttons
-    quote7Button.setAttribute('class', 'hidden');
-    aboutButton7.setAttribute('class', 'hidden');
-    quote7Card.setAttribute('style', 'max-width: 400px');
-    quote7.setAttribute('style', 'color: black');
-
-  //displays 'about' content inside of quote card
-  quote7.textContent = aboutQuote7;
-  aboutAuthorBtn.setAttribute('class', 'button');
+  aboutQuote();
 });
 
 //QUOTECARD 8
@@ -1200,33 +1100,17 @@ quote8Card.addEventListener('click', function() {
 
 //listens for click on 'keep reading' button
 quote8Button.addEventListener('click', function() {
-  //hides buttons
-    quote8Button.setAttribute('class', 'hidden');
-    aboutButton8.setAttribute('class', 'hidden');
-  //displays modal with quote content
-    modal8.style.display = "flex";
-    modalContent8.textContent = longQuote8;
-  //reverts quote card to original state
-    quote8.textContent = shortQuote8;
-    quote8Card.setAttribute('style', 'max-width: 250px');
-    window.onclick = function(event) {
-      if (event.target == modal8) {
-        modal8.style.display = "none";
-        centerPrompt.setAttribute('class', 'inherit');
-      }
+  openModal();
+  window.onclick = function(event) {
+    if (event.target == modal8) {
+      modal8.style.display = "none";
+      centerPrompt.setAttribute('class', 'inherit');
     }
+  }
 });
 
 aboutButton8.addEventListener('click', function() {
-  //hides buttons
-    quote8Button.setAttribute('class', 'hidden');
-    aboutButton8.setAttribute('class', 'hidden');
-    quote8Card.setAttribute('style', 'max-width: 400px');
-    quote8.setAttribute('style', 'color: black');
-
-  //displays 'about' content inside of quote card
-  quote8.textContent = aboutQuote8;
-  aboutAuthorBtn.setAttribute('class', 'button');
+  aboutQuote();
 });
 
 // var shufflePuzzle = document.querySelector('#shufflepuzzle');
@@ -1236,13 +1120,18 @@ aboutButton8.addEventListener('click', function() {
 // });
 
 
+let quotes = [quote1, quote2, quote3, quote4, quote5, quote6, quote7, quote8];
+let quoteCards = [quote1Card, quote2Card, quote3Card, quote4Card, quote5Card, quote6Card, quote7Card, quote8Card];
+let modals = [modal1, modal2, modal3, modal4, modal5, modal6, modal7, modal8];
+let modalContents = [modalContent1, modalContent2, modalContent3, modalContent4, modalContent5, modalContent6, modalContent7, modalContent8];
+let midQuotes = [midQuote1, midQuote2, midQuote3, midQuote4, midQuote5, midQuote6, midQuote7, midQuote8];
+let shortQuotes = [shortQuote1, shortQuote2, shortQuote3, shortQuote4, shortQuote5, shortQuote6, shortQuote7, shortQuote8];
+let longQuotes = [longQuote1, longQuote2, longQuote3, longQuote4, longQuote5, longQuote6, longQuote7, longQuote8];
+let quoteButtons = [quote1Button, quote2Button, quote3Button, quote4Button, quote5Button, quote6Button, quote7Button, quote8Button];
+let aboutButtons = [aboutButton1, aboutButton2, aboutButton3, aboutButton4, aboutButton5, aboutButton6, aboutButton7, aboutButton8];
+let aboutQuotes = [aboutQuote1, aboutQuote2, aboutQuote3, aboutQuote4, aboutQuote5, aboutQuote6, aboutQuote7, aboutQuote8];
+
 function closeAnyOpen() {
-  let quotes = [quote1, quote2, quote3, quote4, quote5, quote6, quote7, quote8];
-  let midQuotes = [midQuote1, midQuote2, midQuote3, midQuote4, midQuote5, midQuote6, midQuote7, midQuote8];
-  let shortQuotes = [shortQuote1, shortQuote2, shortQuote3, shortQuote4, shortQuote5, shortQuote6, shortQuote7, shortQuote8];
-  let quoteButtons = [quote1Button, quote2Button, quote3Button, quote4Button, quote5Button, quote6Button, quote7Button, quote8Button];
-  let aboutButtons = [aboutButton1, aboutButton2, aboutButton3, aboutButton4, aboutButton5, aboutButton6, aboutButton7, aboutButton8];
-  let aboutQuotes = [aboutQuote1, aboutQuote2, aboutQuote3, aboutQuote4, aboutQuote5, aboutQuote6, aboutQuote7, aboutQuote8];
   for(var i=0; i < quotes.length; i++) {
     if (quotes[i].textContent === midQuotes[i]) {
       quotes[i].textContent = shortQuotes[i];
@@ -1264,6 +1153,47 @@ function closeAnyOpen() {
     };
   }
 };
+
+function openModal() {
+  for(var i=0; i < quotes.length; i++) {
+    if (quotes[i].textContent === midQuotes[i]) {
+      quoteButtons[i].setAttribute('class', 'hidden');
+      aboutButtons[i].setAttribute('class', 'hidden');
+    //displays modal with quote content
+      modals[i].style.display = "flex";
+      modalContents[i].textContent = longQuotes[i];
+    //reverts quote card to original state
+      quotes[i].textContent = shortQuotes[i];
+      quoteCards[i].setAttribute('style', 'max-width: 250px');
+    }
+  }
+};
+
+function aboutQuote() {
+  for(var i=0; i < quotes.length; i++) {
+    if (quotes[i].textContent === midQuotes[i]) {
+      quoteButtons[i].setAttribute('class', 'hidden');
+      aboutButtons[i].setAttribute('class', 'hidden');
+      quoteCards[i].setAttribute('style', 'max-width: 400px');
+      quotes[i].setAttribute('style', 'color: black');
+
+    //displays 'about' content inside of quote card
+    quotes[i].textContent = aboutQuotes[i];
+    aboutAuthorBtn.setAttribute('class', 'button');
+    }
+  }
+};
+
+
+// function midQuote(event) {
+//   if(event.target === quoteCards[i]) {
+//     centerPrompt.setAttribute('class', 'hidden');
+//     quotes[i].textContent = midQuote8;
+//     quoteButtons[i].setAttribute('class', 'button');
+//     aboutButtons[i].setAttribute('class', 'button');
+//     quoteCards[i].setAttribute('style', 'max-width: 550px');
+//   }
+// };
 
 // function deBubble() {
 //   let quotes = [quote1, quote2, quote3, quote4, quote5, quote6];
