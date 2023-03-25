@@ -220,3 +220,15 @@
   border-radius: 3px;
 }
 
+.contactme {
+  font-size: 36px;
+  color:rgb(249, 2, 154);
+}
+
+.contactform {
+  display: block;
+}
+
+#formemail::placeholder {
+  opacity: 0.5;
+}

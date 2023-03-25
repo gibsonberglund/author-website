@@ -780,12 +780,14 @@ let webDevLink = document.querySelector('#webdevlink');
 function aboutAuthor() {
   quote1.textContent = authorBlurb;
   quote1.setAttribute('style', 'color: black');
-  quote1Card.setAttribute('style', 'max-height: 250px', 'width: 500px');
+  quote1Card.setAttribute('style', 'height: 250px', 'width: 500px');
   aboutAuthorBtn.setAttribute('class', 'hidden');
   authorPage.setAttribute('class', 'authorpage');
   //authorInfo.setAttribute('class', 'authorcard');
   profilePic.setAttribute('class', 'profilepic');
-  contactBtn.setAttribute('class', 'button');
+  //contactBtn.setAttribute('class', 'button');
+  quote8.textContent = 'CONTACT ME';
+  quote8.setAttribute('class', 'contactme');
   webDevLink.setAttribute('style', 'display: flex');
   //authorInfo.textContent = authorBlurb;
   quote4Card.setAttribute('style', 'margin-top: 50%');
@@ -820,12 +822,7 @@ quote1Card.addEventListener('click', function(event) {
 //changes size and content when clicked
     event.preventDefault();
     closeAnyOpen();
-    centerPrompt.setAttribute('class', 'hidden');
-    quote1.textContent = midQuote1;
-    quote1Button.setAttribute('class', 'button');
-    aboutButton1.setAttribute('class', 'button');
-    quote1Card.setAttribute('style', 'max-width: 550px');
-    quote1.setAttribute('style', 'color: black');
+    midQuote(event.target);
 });
 
 // if (quote1.textContent === midQuote1) {
@@ -865,13 +862,9 @@ let aboutButton2 = document.querySelector('#aboutbutton2');
 quote2.textContent = shortQuote2;
 
 
-  quote2Card.addEventListener('click', function() {
+  quote2Card.addEventListener('click', function(event) {
     closeAnyOpen();
-    centerPrompt.setAttribute('class', 'hidden');
-    quote2.textContent = midQuote2
-    quote2Button.setAttribute('class', 'button');
-    aboutButton2.setAttribute('class', 'button');
-    quote2Card.setAttribute('style', 'max-width: 450px');
+    midQuote(event.target);
 });
 
 quote2Button.addEventListener('click', function() {
@@ -899,13 +892,9 @@ let aboutButton3 = document.querySelector('#aboutbutton3');
 quote3.textContent = shortQuote3;
 
 
-  quote3Card.addEventListener('click', function() {
+  quote3Card.addEventListener('click', function(event) {
     closeAnyOpen();
-    centerPrompt.setAttribute('class', 'hidden');
-    quote3.textContent = midQuote3
-    quote3Button.setAttribute('class', 'button');
-    aboutButton3.setAttribute('class', 'button');
-    quote3Card.setAttribute('style', 'max-width: 450px');
+    midQuote(event.target);
 });
 
 quote3Button.addEventListener('click', function() {
@@ -933,13 +922,9 @@ let aboutButton4 = document.querySelector('#aboutbutton4');
 
 quote4.textContent = shortQuote4;
 
-  quote4Card.addEventListener('click', function() {
+  quote4Card.addEventListener('click', function(event) {
     closeAnyOpen();
-    centerPrompt.setAttribute('class', 'hidden');
-    quote4.textContent = midQuote4
-    quote4Button.setAttribute('class', 'button');
-    aboutButton4.setAttribute('class', 'button');
-    quote4Card.setAttribute('style', 'max-width: 450px');
+    midQuote(event.target);
 });
 
 quote4Button.addEventListener('click', function() {
@@ -966,13 +951,9 @@ let aboutButton5 = document.querySelector('#aboutbutton5');
 
 quote5.textContent = shortQuote5;
 
-  quote5Card.addEventListener('click', function() {
+  quote5Card.addEventListener('click', function(event) {
     closeAnyOpen();
-    centerPrompt.setAttribute('class', 'hidden');
-    quote5.textContent = midQuote5;
-    quote5Button.setAttribute('class', 'button');
-    aboutButton1.setAttribute('class', 'button');
-    quote5Card.setAttribute('style', 'max-width: 450px');
+    midQuote(event.target);
 });
 
 quote5Button.addEventListener('click', function() {
@@ -1000,14 +981,10 @@ let aboutButton6 = document.querySelector('#aboutbutton6');
 quote6.textContent = shortQuote6;
 
 //listens for click on one of the quote cards
-quote6Card.addEventListener('click', function() {
+quote6Card.addEventListener('click', function(event) {
 //changes size and content when clicked
     closeAnyOpen();
-    centerPrompt.setAttribute('class', 'hidden');
-    quote6.textContent = midQuote6;
-    quote6Button.setAttribute('class', 'button');
-    aboutButton6.setAttribute('class', 'button');
-    quote6Card.setAttribute('style', 'max-width: 550px');
+    midQuote(event.target);
 });
 
 //listens for click on 'keep reading' button
@@ -1038,27 +1015,11 @@ let aboutButton7 = document.querySelector('#aboutbutton7');
 quote7.textContent = shortQuote7;
 
 //listens for click on one of the quote cards
-quote7Card.addEventListener('click', function() {
+quote7Card.addEventListener('click', function(event) {
 //changes size and content when clicked
     closeAnyOpen();
-    centerPrompt.setAttribute('class', 'hidden');
-    quote7.textContent = midQuote7;
-    quote7Button.setAttribute('class', 'button');
-    aboutButton7.setAttribute('class', 'button');
-    quote7Card.setAttribute('style', 'max-width: 550px');
+    midQuote(event.target);
 });
-
-
-// if (quote7.textContent === midQuote7) {
-//   window.onclick = function(event) {
-//     if (event.target == quote7Card) {
-//       quote7Button.setAttribute('class', 'hidden');
-//       aboutButton7.setAttribute('class', 'hidden');
-//       quote7.textContent = shortQuote7;
-//     }
-//   };
-// };
-
 
 //listens for click on 'keep reading' button
 quote7Button.addEventListener('click', function() {
@@ -1088,14 +1049,14 @@ let aboutButton8 = document.querySelector('#aboutbutton8');
 quote8.textContent = shortQuote8;
 
 //listens for click on one of the quote cards
-quote8Card.addEventListener('click', function() {
+quote8Card.addEventListener('click', function(event) {
 //changes size and content when clicked
     closeAnyOpen();
-    centerPrompt.setAttribute('class', 'hidden');
-    quote8.textContent = midQuote8;
-    quote8Button.setAttribute('class', 'button');
-    aboutButton8.setAttribute('class', 'button');
-    quote8Card.setAttribute('style', 'max-width: 550px');
+    if (quote8.textContent === 'CONTACT ME') {
+      contactMe();
+    } else {
+    midQuote(event.target);
+    }
 });
 
 //listens for click on 'keep reading' button
@@ -1176,24 +1137,46 @@ function aboutQuote() {
       aboutButtons[i].setAttribute('class', 'hidden');
       quoteCards[i].setAttribute('style', 'max-width: 400px');
       quotes[i].setAttribute('style', 'color: black');
-
-    //displays 'about' content inside of quote card
-    quotes[i].textContent = aboutQuotes[i];
-    aboutAuthorBtn.setAttribute('class', 'button');
+      quotes[i].textContent = aboutQuotes[i];
+      aboutAuthorBtn.setAttribute('class', 'button');
     }
   }
 };
 
+function midQuote(event) {
+  for(var i=0; i < quotes.length; i++) {
+    if (event === quoteCards[i] || event === quotes[i]) {
+    centerPrompt.setAttribute('class', 'hidden');
+    quotes[i].textContent = midQuotes[i];
+    quoteButtons[i].setAttribute('class', 'button');
+    aboutButtons[i].setAttribute('class', 'button');
+    quoteCards[i].setAttribute('style', 'max-width: 550px');
+    quotes[i].setAttribute('style', 'color: black');
+    }
+  }
+};
 
-// function midQuote(event) {
-//   if(event.target === quoteCards[i]) {
-//     centerPrompt.setAttribute('class', 'hidden');
-//     quotes[i].textContent = midQuote8;
-//     quoteButtons[i].setAttribute('class', 'button');
-//     aboutButtons[i].setAttribute('class', 'button');
-//     quoteCards[i].setAttribute('style', 'max-width: 550px');
-//   }
-// };
+let formEmail = document.querySelector('#formemail');
+let formName = document.querySelector('#formname');
+let formMessage = document.querySelector('#formmessage');
+let contactSubBtn = document.querySelector('#formsubmit');
+
+function contactMe() {
+  for(var i=0; i < quoteCards.length; i++) {
+    quoteCards[i].setAttribute('class', 'hidden');
+  }
+  console.log('should work');
+  formEmail.setAttribute('class', 'contactform');
+  formEmail.textContent = 'Email';
+  formName.setAttribute('class', 'contactform');
+  formName.textContent = 'Name';
+  formMessage.setAttribute('class', 'contactform');
+  formMessage.textContent = 'Message';
+  contactSubBtn.setAttribute('class', 'button');
+  //displayForm();
+};
+
+
 
 // function deBubble() {
 //   let quotes = [quote1, quote2, quote3, quote4, quote5, quote6];
